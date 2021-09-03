@@ -7,8 +7,7 @@ const LogoText = styled.div`
   cursor: pointer;
   color: white;
 
-  &:after {
-    content: ".";
+  span {
     color: red;
   }
 `;
@@ -16,7 +15,7 @@ const LogoText = styled.div`
 function Logo() {
   return (
     <LogoText>
-      Lalo Venegas
+      Lalo Venegas<span>.</span>
     </LogoText>
   );
 }
