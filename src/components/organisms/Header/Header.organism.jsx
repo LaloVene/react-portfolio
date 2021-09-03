@@ -4,18 +4,25 @@ import {
   IonToolbar,
 } from "@ionic/react";
 import styled from "styled-components";
-import Logo from "../../atoms/Logo.atom";
+import Logo from "../../atoms/Logo/Logo.atom";
+import Navbar from "../../organisms/Navbar/Navbar.organism";
 
 const Container = styled.div`
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   background: #343353;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 function Header() {
   return (
     <IonHeader>
       <IonToolbar>
-        <Container><Logo /></Container>
+        <Container>
+          <Logo />
+          <Navbar />
+        </Container>
       </IonToolbar>
     </IonHeader>
   );
