@@ -1,5 +1,5 @@
-import { IonButton } from "@ionic/react";
 import React from "react";
+import { IonButton } from "@ionic/react";
 import styled from "styled-components";
 
 const Button = styled(IonButton)`
@@ -7,17 +7,17 @@ const Button = styled(IonButton)`
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
-  --background: none;
-  --box-shadow: none;
+  /* --background: none;
+  --box-shadow: none; */
 
   &:hover {
-    --color: #F5C852;
+    /* --color: #F5C852; */
   }
 `;
 
-function NavbarButton({children, onClick}) {
+function NavbarButton({children, ...props}) {
   return (
-    <Button onClick={onClick}>
+    <Button {...props} shape="round">
         {children}
     </Button>
   );

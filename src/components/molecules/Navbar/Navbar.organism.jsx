@@ -3,13 +3,14 @@ import styled from "styled-components";
 import NavbarButton from "../../atoms/NavbarButton/NavbarButton.atom";
 
 const Container = styled.div`
-  padding: 0 1.5rem;
   background: #343353;
   display: flex;
-`;
-const ItemContainer = styled.div`
-  margin: 0 1.5rem;
-  padding: 0;
+  width: 30rem;
+  justify-content: space-between;
+
+  @media(max-width: 768px) {
+    display: none;
+  }
 `;
 
 const items = [
@@ -30,9 +31,7 @@ const items = [
 const Navbar = () => (
   <Container>
     {items.map((item) => (
-      <ItemContainer key={item.label}>
-        <NavbarButton>{item.label}</NavbarButton>
-      </ItemContainer>
+      <NavbarButton key={item.label}>{item.label}</NavbarButton>
     ))}
   </Container>
 );

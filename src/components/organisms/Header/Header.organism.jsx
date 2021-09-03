@@ -5,7 +5,7 @@ import {
 } from "@ionic/react";
 import styled from "styled-components";
 import Logo from "../../atoms/Logo/Logo.atom";
-import Navbar from "../../organisms/Navbar/Navbar.organism";
+import Navbar from "../../molecules/Navbar/Navbar.organism";
 
 const Container = styled.div`
   padding: 1rem 2rem;
