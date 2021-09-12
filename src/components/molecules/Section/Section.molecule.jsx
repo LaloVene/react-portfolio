@@ -3,6 +3,7 @@ import styled from "styled-components";
 import SectionTitle from "../../atoms/SectionTitle/SectionTitle.atom";
 
 const Container = styled.div`
+  margin-bottom: 6rem;
 `;
 
 
