@@ -38,7 +38,7 @@ const Home = () => {
           <Section ref={state.aboutRef} title="About Me">
             <About />
           </Section>
-          <Section ref={state.backgroundRef} title="Background">
+          <Section ref={state.backgroundRef} title="Experience">
             <Background />
           </Section>
           <Section ref={state.projectsRef} title="Projects">
