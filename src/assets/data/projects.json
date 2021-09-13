@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Platform to help developers find teammates for side projects",
+    "name": "DevUp",
+    "description": "Ever wanted to work on a project with others but don't know where to get started? Introducing DevUp - a platform to help developers find teammates for side projects.\n Developers can search for projects that they are interested in, and contact the current team members of the project to learn more about them and join their team. Developers that already have an project idea can make a post on DevUp to display it to other project-seeking developers and find new team members.",
+    "imageUrl": "https://user-images.githubusercontent.com/74735037/129316871-f9dc82d2-dd5e-493d-bb8e-06500c2bee33.png",
+    "githubUrl": "https://github.com/LaloVene/MLH-PE-Project",
+    "url": "",
+    "winnerText": "MLH PE Hackathon winner",
+    "winnerLink": "https://devpost.com/software/see-your-world",
+    "tags": [
+      "Docker",
+      "Ionic React",
+      "AWS EC2",
+      "CI/CD",
+      "NGINX",
+      "Github Actions",
+      "Grafana",
+      "Prometheus",
+      "Flask",
+      "PostgreSQL",
+      "Newman testing",
+      "Jest"
+    ]
+  },
+  {
+    "title": "Image Captioning App to help people with limited vision.",
+    "name": "Image Captioning App",
+    "description": "Technology is a great way to help those in need, as it continous to develop it also presents new possibilities, one such being human vision aided and complemented by computer vision.\n This project consists of a web and mobile based app that generates captions from images captured by the device's camera. The goal of the app is to help people with limited vision to see the world around them by using an easy to use UI from where the users can take a picture, upload it to the app a be presented with an audio caption in multiple languages of what they are seeing.\n This can be run in a Web Browser or compiled to an Adroid or IOS device using the Ionic Capacitor tool.",
+    "imageUrl": "https://user-images.githubusercontent.com/54692916/133138302-e4524f4d-067d-4487-8694-c520a000411b.png",
+    "githubUrl": "https://github.com/LaloVene/Image-Captioning-Project",
+    "winnerText": "HackMTY 2nd place winner",
+    "winnerLink": "https://devpost.com/software/devup-d3j925",
+    "url": "",
+    "tags": [
+      "Docker",
+      "Ionic Angular",
+      "NGINX",
+      "Flask",
+      "Deep Learning",
+      "TensorFlow",
+      "CNN",
+      "RNN",
+      "Text2Speech"
+    ]
+  },
+  {
+    "title": "YouTube clone app using the YouTube v3 API.",
+    "name": "Youtube Clone",
+    "description": "Youtube Clone App built using React and the YouTube v3 API. Features:\n* Main page with popular videos.\n* Video detail page with related videos.\n* User can login and mark videos as favorite (user: wizeline, password: Rocks!).\n* Private page of favorites and favorite video detail view with favorite suggestions.\n* Different Views for Desktop and Mobile.\n* Implemented TDD using Jest.\n* Added CI/CD with Github Actions and Netlify CD.\n* Light / Dark mode using the context React Hook, Styled Components and the local storage..",
+    "imageUrl": "https://user-images.githubusercontent.com/54692916/131430828-0270aff5-0df9-4aad-aa89-288103b15da5.png",
+    "githubUrl": "https://github.com/LaloVene/react-certification-2021",
+    "url": "",
+    "tags": [
+      "React",
+      "React Hooks",
+      "Youtube v3 API",
+      "Styled Components",
+      "Jest",
+      "Github Actions",
+      "Netlify CD"
+    ]
+  }
+]

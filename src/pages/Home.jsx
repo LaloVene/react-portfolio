@@ -7,6 +7,7 @@ import Hero from "../components/organisms/Hero/Hero.organism";
 import Section from "../components/molecules/Section/Section.molecule";
 import About from "../components/organisms/About/About.organism";
 import Background from "../components/organisms/Background/Background.organism";
+import Projects from "../components/organisms/Projects/Projects.organism";
 
 const ContentWrapper = styled.div`
   max-width: 1280px;
@@ -16,7 +17,6 @@ const ContentWrapper = styled.div`
 const Home = () => {
   const [state, dispatch] = useReducer(GlobalReducer, initialState);
 
-  const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const backgroundRef = useRef(null);
   const projectsRef = useRef(null);
@@ -24,7 +24,6 @@ const Home = () => {
   useEffect(() => {
     dispatch({
       type: "SET_REFS",
-      homeRef: homeRef.current,
       aboutRef: aboutRef,
       backgroundRef: backgroundRef,
       projectsRef: projectsRef,
@@ -42,9 +41,9 @@ const Home = () => {
           <Section ref={state.backgroundRef} title="Background">
             <Background />
           </Section>
-          {/* <Section ref={state.projectsRef} title="Projects">
-            <Background />
-          </Section> */}
+          <Section ref={state.projectsRef} title="Projects">
+            <Projects />
+          </Section>
         </ContentWrapper>
       </PageContainer>
     </GlobalContext.Provider>

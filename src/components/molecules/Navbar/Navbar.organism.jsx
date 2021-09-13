@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import GlobalContext from "../../../utils/state/GlobalContext";
 import NavbarButton from "../../atoms/NavbarButton/NavbarButton.atom";
@@ -9,16 +9,13 @@ const Container = styled.div`
   width: 30rem;
   justify-content: space-between;
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
 
 const scrollTo = (ref) => {
-  if (
-    ref &&
-    ref.current /* + other conditions */
-  ) {
+  if (ref && ref.current /* + other conditions */) {
     ref.current.scrollIntoView({
       behavior: "smooth",
       block: "start",
@@ -26,15 +23,10 @@ const scrollTo = (ref) => {
   }
 };
 
-
 const Navbar = () => {
   const { state } = useContext(GlobalContext);
 
   const items = [
-    {
-      label: "Home",
-      onClick: () => scrollTo(state.homeRef),
-    },
     {
       label: "About",
       onClick: () => scrollTo(state.aboutRef),
@@ -44,6 +36,10 @@ const Navbar = () => {
       onClick: () => scrollTo(state.backgroundRef),
     },
     {
+      label: "Projects",
+      onClick: () => scrollTo(state.projectsRef),
+    },
+    {
       label: "Contact",
       onClick: () => scrollTo(state.backgroundRef),
     },
@@ -51,7 +47,9 @@ const Navbar = () => {
   return (
     <Container>
       {items.map((item) => (
-        <NavbarButton onClick={item.onClick} key={item.label}>{item.label}</NavbarButton>
+        <NavbarButton onClick={item.onClick} key={item.label}>
+          {item.label}
+        </NavbarButton>
       ))}
     </Container>
   );
