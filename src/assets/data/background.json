@@ -4,19 +4,19 @@
       "title": "Production Engineering Fellow",
       "location": "Major League Hacking",
       "time": "June 2021 - August 2021",
-      "description": "One of the 120 selected people from the total of 20,000.Automated a CI/CD workflow using GitHub Actions to deploy a production server. Served on a Docker container, guaranteeing 99.99% uptime on a AWS EC2 instance. Monitored the app using cAdvisor and other tools."
+      "description": "One of the 120 selected people from the total of 20,000.Automated a **CI/CD** workflow using **GitHub Actions** to deploy a production server. Served on a Docker container, guaranteeing **99.99%** uptime on a **AWS EC2** instance. Monitored the app using **cAdvisor**, **Prometheus** and **Grafana**"
     },
     {
       "title": "Data Engineer",
       "location": "Jiit Technologies",
       "time": "Marz 2021 - June 2021",
-      "description": "Used mathematical and statistical technics over data to get the most important features and create ML models that generate predictions as well as valuable insights. Created ML analysis pipeline endpoints using Flask."
+      "description": "Used mathematical and statistical technics over data to get the most important **features** and create ML models that generate **predictions** as well as valuable insights. Created ML analysis pipeline endpoints using **Flask**."
     },
     {
       "title": "Full Stack Developer",
       "location": "Jiit Technologies",
       "time": "October 2020 - June 2021",
-      "description": "Developed a platform for COVID tracking, a Marketplace site and an ERP platform that can organize inventory, human resources shipments, income and expenses. Used Ionic Angular, Typescript, Cordova, SQL and Flask."
+      "description": "Developed a platform for **COVID tracking**, a **Marketplace** site and an **ERP** platform that can organize inventory, human resources shipments, income and expenses. Used ***Ionic Angular**, **Typescript**, **Cordova**, **SQL** and **Flask**."
     }
   ],
   "education": [
@@ -24,19 +24,19 @@
       "title": "Computer Science Student",
       "location": "Tecnológico de Monterrey",
       "time": "August 2019 - Present (Expected 2023)",
-      "description": "60% Tuition scholarship due to academic merit. Won first place in the Campus Engineering Expo. GPA: 97.27 (Achieved one of the best GPA 3 times). Member of the Algorithm Club school group."
+      "description": "**60% Tuition** scholarship due to academic merit. Won first place in the Campus Engineering Expo. GPA: **97.27** (Achieved one of the best GPA 3 times). Member of the Algorithm Club school group."
     },
     {
       "title": "React Bootcamp",
       "location": "Wizeline",
       "time": "July 2021 - September 2021",
-      "description": "Learned about Core Concepts, Styling, Patterns, Routing, Testing and TDD. Created a YouTube clone app using the YouTube v3 API and React Hooks for managing state. Developed app using a TDD approach with Jest."
+      "description": "Learned about Core Concepts, Styling, Patterns, Routing, Testing and TDD. Created a YouTube clone app using the **YouTube v3 API** and **React Hooks** for managing state. Developed app using a **TDD** approach with **Jest**."
     },
     {
       "title": "Technologist in Automatic Control and Instrumentation",
       "location": "CETI Colomos",
       "time": "August 2015 - July 2019",
-      "description": "Learned about Core Concepts, Styling, Patterns, Routing, Testing and TDD. Created a YouTube clone app using the YouTube v3 API and React Hooks for managing state. Developed app using a TDD approach with Jest."
+      "description": "**Thesis Project:** Autonomous Tennis Machine."
     }
   ]
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ReactMarkdown from 'react-markdown';
 import { IonIcon } from "@ionic/react";
 import { briefcase, book } from "ionicons/icons";
 
@@ -43,7 +44,7 @@ function BackgroundSection({type, time, title, description}) {
       </Header>
       <Content>
         <h1>{title}</h1>
-        <p>{description}</p>
+        <ReactMarkdown>{description}</ReactMarkdown>
       </Content>
     </Container>
   );
