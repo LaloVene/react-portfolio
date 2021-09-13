@@ -22,7 +22,7 @@ function AboutCard() {
     <Card>
       <IonCardContent>
         <Text>
-          I am Eduardo Venegas, a Computer Science student at the University of
+          My name is Eduardo Venegas, a Computer Science student at the University of
           Tec de Monterrey. I have experience in the field of{" "}
           <b>Web Development</b>, <b>Data Engineering</b>, <b>DevOps</b> and{" "}
           <b>Site Reliability</b>.

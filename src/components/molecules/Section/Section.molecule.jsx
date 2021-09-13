@@ -6,14 +6,13 @@ const Container = styled.div`
   margin-bottom: 6rem;
 `;
 
-
-function Section({children, title}) {
+const Section = React.forwardRef(({ children, title }, ref) => {
   return (
-    <Container>
+    <Container ref={ref}>
       <SectionTitle>{title}</SectionTitle>
       {children}
     </Container>
   );
-}
+});
 
 export default Section;
