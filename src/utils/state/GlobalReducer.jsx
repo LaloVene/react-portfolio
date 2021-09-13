@@ -1,5 +1,4 @@
 export const initialState = {
-  homeRef: null,
   aboutRef: null,
   backgroundRef: null,
   projectsRef: null,
@@ -7,10 +6,9 @@ export const initialState = {
 
 const GlobalReducer = (state, action) => {
   switch (action.type) {
-    case 'SET_REFS': {
+    case "SET_REFS": {
       return {
         ...state,
-        homeRef: action.homeRef,
         aboutRef: action.aboutRef,
         backgroundRef: action.backgroundRef,
         projectsRef: action.projectsRef,
