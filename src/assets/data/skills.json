@@ -1,0 +1,94 @@
+{
+  "languages": [
+    {
+      "name": "JavaScript",
+      "logo": "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
+    },
+    {
+      "name": "TypeScript",
+      "logo": "https://user-images.githubusercontent.com/54692916/131588414-1493c44a-f570-400d-919f-2deb3b2de049.png"
+    },
+    {
+      "name": "Python",
+      "logo": "https://user-images.githubusercontent.com/54692916/131589278-01f07f6f-d535-4d46-9d68-e84251a9e539.png"
+    },
+    {
+      "name": "R",
+      "logo": "https://user-images.githubusercontent.com/54692916/131589399-82c7dced-bca5-4286-8b94-35ec555c398c.png"
+    },
+    {
+      "name": "C++",
+      "logo": "https://user-images.githubusercontent.com/54692916/131589480-735743bc-f958-458f-bee9-83a307c1f8ba.png"
+    },
+    {
+      "name": "C",
+      "logo": "https://user-images.githubusercontent.com/54692916/131589531-2b5d21e8-0797-4f47-af66-946300d53561.png"
+    },
+    {
+      "name": "MatLab",
+      "logo": "https://user-images.githubusercontent.com/54692916/131589590-2d33315f-24aa-4828-adb9-a48b36a505b1.png"
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "React",
+      "logo": "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
+    },
+    {
+      "name": "Angular",
+      "logo": "https://user-images.githubusercontent.com/54692916/131589640-86a6a9ac-e938-4771-a1a9-bae544c938c9.png"
+    },
+    {
+      "name": "Ionic",
+      "logo": "https://user-images.githubusercontent.com/54692916/131591386-c6ddef5e-cf67-4eaf-bdb2-1f059f4983ed.png"
+    },
+    {
+      "name": "Flask",
+      "logo": "https://damiandeluca.com.ar/wp-content/uploads/2020/05/flask.jpg"
+    },
+    {
+      "name": "Node JS",
+      "logo": "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"
+    },
+    {
+      "name": "Jest",
+      "logo": "https://user-images.githubusercontent.com/54692916/131591143-c39e9841-b9f7-49b8-b878-b14b96ee7beb.png"
+    },
+    {
+      "name": "TensorFlow",
+      "logo": "https://user-images.githubusercontent.com/54692916/131591295-7d2c1dd4-6a16-4a56-bf45-800dd5e60a4d.png"
+    }
+  ],
+  "tools": [
+    {
+      "name": "Docker",
+      "logo": "https://user-images.githubusercontent.com/54692916/131588347-4e01a8e1-472c-45ad-8b7e-475f65c6efe6.png"
+    },
+    {
+      "name": "Git",
+      "logo": "https://user-images.githubusercontent.com/54692916/131587478-532e9009-d994-4b3a-b11d-e325f3275c17.png"
+    },
+    {
+      "name": "GitHubActions",
+      "logo": "https://user-images.githubusercontent.com/54692916/131590018-eade87c0-b803-41fe-9b93-fdf3adda9e08.png"
+    },
+    {
+      "name": "GitHub",
+      "logo": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+    }
+  ],
+  "other": [
+    {
+      "name": "Linux",
+      "logo": "https://user-images.githubusercontent.com/54692916/131590613-1aef8ae7-bf3d-446a-8d1c-99385f14e7d0.png"
+    },
+    {
+      "name": "SQL",
+      "logo": "https://user-images.githubusercontent.com/54692916/131590547-32508d52-7373-4a5d-bf9f-dc64af24e462.png"
+    },
+    {
+      "name": "Arduino",
+      "logo": "https://user-images.githubusercontent.com/54692916/131590791-0dea1572-3871-4a7f-b686-f593dde8bd7a.png"
+    }
+  ]
+}

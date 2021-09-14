@@ -1,20 +1,25 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const LogoText = styled.div`
   font-weight: 800;
   font-size: 2rem;
   cursor: pointer;
   color: white;
+  ${(props) =>
+    props.black &&
+    css`
+      color: black;
+    `}
 
   span {
     color: red;
   }
 `;
 
-function Logo() {
+function Logo({ black }) {
   return (
-    <LogoText>
+    <LogoText black={black}>
       Lalo Venegas<span>.</span>
     </LogoText>
   );

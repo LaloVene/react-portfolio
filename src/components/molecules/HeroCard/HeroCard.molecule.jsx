@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Avatar from "../../atoms/Avatar/Avatar.atom";
 import Button from "../../atoms/Button/Button.atom";
+import SocialMedia from "../SocialMedia/SocialMedia.molecule";
 
 const Container = styled.div`
   text-align: center;
@@ -24,7 +25,6 @@ const Description = styled.p`
   font-size: 1rem;
   margin: 0;
   margin-top: 0.5rem;
-  margin-bottom: 2rem;
   color: hsl(0, 0%, 70%);
 `;
 
@@ -36,6 +36,7 @@ function HeroCard() {
       </AvatarContainer>
       <Name>Lalo Venegas</Name>
       <Description>CS Student @ Tec de Monterrey</Description>
+      <SocialMedia />
       <Button color="danger" href="mailto:lalohdez77@gmail.com">
         Contact Me
       </Button>

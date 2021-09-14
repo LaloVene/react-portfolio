@@ -61,5 +61,23 @@
       "Github Actions",
       "Netlify CD"
     ]
+  },
+  {
+    "title": "IoT device control App built in Angular using Firebase and a NodeMCU board.",
+    "name": "Room System",
+    "description": "Won 1rst place in the Campus Engineering Expo. App built in Angular to control a room´s light, fan, doors and windows using Firebase and a NodeMCU board. Get the current weather with an API and use it to predict if it is going to rain using a Deep Learning Keras model.",
+    "imageUrl": "https://user-images.githubusercontent.com/54692916/133336327-fddf1199-5542-4418-a0d8-a6a8ca5bb63b.png",
+    "githubUrl": "https://github.com/LaloVene/Intelligent-Room-Project",
+    "winnerText": "Engineering Expo winner",
+    "winnerLink": "https://user-images.githubusercontent.com/54692916/133326720-97f0df65-594d-4686-a9b2-0ce225c58469.png",
+    "url": "",
+    "tags": [
+      "Ionic Angular",
+      "Firebase",
+      "NodeMCU",
+      "TensorFlow JS",
+      "Deep Learning",
+      "Chart JS"
+    ]
   }
 ]

@@ -9,6 +9,7 @@ import About from "../components/organisms/About/About.organism";
 import Background from "../components/organisms/Background/Background.organism";
 import Projects from "../components/organisms/Projects/Projects.organism";
 import Diplomas from "../components/organisms/Diplomas/Diplomas.organism";
+import Skills from "../components/organisms/Skills/Skills.organism";
 
 const ContentWrapper = styled.div`
   max-width: 1280px;
@@ -38,6 +39,9 @@ const Home = () => {
         <ContentWrapper>
           <Section ref={state.aboutRef} title="About Me">
             <About />
+          </Section>
+          <Section title="Skills">
+            <Skills />
           </Section>
           <Section ref={state.backgroundRef} title="Experience">
             <Background />
