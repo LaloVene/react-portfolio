@@ -8,6 +8,7 @@ import Section from "../components/molecules/Section/Section.molecule";
 import About from "../components/organisms/About/About.organism";
 import Background from "../components/organisms/Background/Background.organism";
 import Projects from "../components/organisms/Projects/Projects.organism";
+import Diplomas from "../components/organisms/Diplomas/Diplomas.organism";
 
 const ContentWrapper = styled.div`
   max-width: 1280px;
@@ -43,6 +44,9 @@ const Home = () => {
           </Section>
           <Section ref={state.projectsRef} title="Projects">
             <Projects />
+          </Section>
+          <Section title="Certificates">
+            <Diplomas />
           </Section>
         </ContentWrapper>
       </PageContainer>

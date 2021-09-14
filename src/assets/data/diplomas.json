@@ -1,0 +1,78 @@
+{
+  "education": [
+    {
+      "title": "React Bootcamp",
+      "date": "September 2021",
+      "institution": "Wizeline",
+      "imageUrl": "https://user-images.githubusercontent.com/54692916/133191388-1394547c-76b7-4874-b54e-0a9f34bd9c98.png",
+      "url": "https://user-images.githubusercontent.com/54692916/133191388-1394547c-76b7-4874-b54e-0a9f34bd9c98.png"
+    },
+    {
+      "title": "Best GPA in Computer Science",
+      "date": "December 2020",
+      "institution": "Tec de Monterrey",
+      "imageUrl": "https://user-images.githubusercontent.com/54692916/133324450-3e92eada-5aff-40b9-816e-b031d9ce6fe8.png",
+      "url": "https://user-images.githubusercontent.com/54692916/133324450-3e92eada-5aff-40b9-816e-b031d9ce6fe8.png"
+    },
+    {
+      "title": "Technologist Degree",
+      "date": "September 2019",
+      "institution": "CETI Colomos",
+      "imageUrl": "https://user-images.githubusercontent.com/54692916/133191508-4fd945fe-cbba-41b5-a912-744799bb9a35.png",
+      "url": "https://user-images.githubusercontent.com/54692916/133191508-4fd945fe-cbba-41b5-a912-744799bb9a35.png"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Mathematics for Data Science",
+      "date": "April 2021",
+      "institution": "Higher School of Economics",
+      "imageUrl": "https://user-images.githubusercontent.com/54692916/133296549-46a87b7b-db63-49ae-af3e-238b2b80b69f.png",
+      "url": "https://coursera.org/verify/specialization/DCEK6MV2EB4V"
+    },
+    {
+      "title": "Data Science",
+      "date": "August 2020",
+      "institution": "HarvardX",
+      "imageUrl": "https://user-images.githubusercontent.com/54692916/133191938-fba7e0ca-734b-48ff-a3e4-878d85ea1862.png",
+      "url": "https://credentials.edx.org/credentials/38baa28582674c3f901ef2f6f3f83c6b/"
+    },
+    {
+      "title": "IBM Deep Learning",
+      "date": "September 2020",
+      "institution": "IBM",
+      "imageUrl": "https://user-images.githubusercontent.com/54692916/133296223-36a4a05f-f9b4-4caa-a289-a201c02553db.png",
+      "url": "https://credentials.edx.org/credentials/db9ccb1ab0234c63adbb538dbc9cf462/"
+    },
+    {
+      "title": "IBM Python Data Science",
+      "date": "July 2020",
+      "institution": "IBM",
+      "imageUrl": "https://user-images.githubusercontent.com/54692916/133295413-e2db5946-90fa-4514-aa77-1a40c949c595.png",
+      "url": "https://credentials.edx.org/credentials/4a1dec4efa2a42e18df88348a492964a/"
+    },
+    {
+      "title": "Google IT Support",
+      "date": "June 2020",
+      "institution": "Google",
+      "imageUrl": "https://user-images.githubusercontent.com/54692916/133295157-fe8824d7-7905-47e6-9475-79c5973ad946.png",
+      "url": "https://www.coursera.org/account/accomplishments/professional-cert/9ZXKGPR53JDR"
+    }
+  ],
+  "hackathons": [
+    {
+      "title": "4th place Hack The Mountains",
+      "date": "June 2021",
+      "institution": "MLH & HackTheMountains",
+      "imageUrl": "https://user-images.githubusercontent.com/54692916/133191645-7cd3e291-0cd4-4ea7-ab56-163eaad94086.png",
+      "url": "https://user-images.githubusercontent.com/54692916/133191645-7cd3e291-0cd4-4ea7-ab56-163eaad94086.png"
+    },
+    {
+      "title": "1rst Place Engineering Expo",
+      "date": "November 2020",
+      "institution": "Tec de Monterrey",
+      "imageUrl": "https://user-images.githubusercontent.com/54692916/133326720-97f0df65-594d-4686-a9b2-0ce225c58469.png",
+      "url": "https://user-images.githubusercontent.com/54692916/133326720-97f0df65-594d-4686-a9b2-0ce225c58469.png"
+    }
+  ]
+}

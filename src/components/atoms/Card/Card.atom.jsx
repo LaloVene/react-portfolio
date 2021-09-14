@@ -10,12 +10,10 @@ const CardDiv = styled(IonCard)`
     0 12px 80px rgba(0, 0, 0, 0.07);
 `;
 
-function Card({children}) {
+function Card({ children, ...props }) {
   return (
-    <CardDiv>
-      <IonCardContent>
-        {children}
-      </IonCardContent>
+    <CardDiv {...props}>
+      <IonCardContent>{children}</IonCardContent>
     </CardDiv>
   );
 }

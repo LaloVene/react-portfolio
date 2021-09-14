@@ -24,8 +24,7 @@ const TextContainer = styled.div`
   }
 `;
 
-
-function Accomplishment({icon, number, text}) {
+function Accomplishment({ icon, number, text }) {
   return (
     <Container>
       <Icon icon={icon} />

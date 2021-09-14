@@ -41,7 +41,7 @@ const Navbar = () => {
     },
     {
       label: "Contact",
-      onClick: () => scrollTo(state.backgroundRef),
+      onClick: () => (window.location.href = "mailto:lalohdez77@gmail.com"),
     },
   ];
   return (

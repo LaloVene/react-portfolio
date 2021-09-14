@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-const Title = styled.p`
+const Title = styled.h2`
   font-size: 2.5rem;
   font-weight: 900;
   position: relative;
   margin-left: 1rem;
+  margin-top: 3rem;
 `;
 const BackText = styled.p`
   position: absolute;

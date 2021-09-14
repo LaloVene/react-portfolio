@@ -27,10 +27,6 @@ const Description = styled.p`
   margin-bottom: 2rem;
   color: hsl(0, 0%, 70%);
 `;
-const Scroll = styled.div`
-  font-size: 1rem;
-  color: hsl(0, 0%, 70%);
-`;
 
 function HeroCard() {
   return (
@@ -38,13 +34,9 @@ function HeroCard() {
       <AvatarContainer>
         <Avatar />
       </AvatarContainer>
-      <Name>
-        Lalo Venegas
-      </Name>
-      <Description>
-        CS Student @ Tec de Monterrey
-      </Description>
-      <Button color="danger">
+      <Name>Lalo Venegas</Name>
+      <Description>CS Student @ Tec de Monterrey</Description>
+      <Button color="danger" href="mailto:lalohdez77@gmail.com">
         Contact Me
       </Button>
     </Container>
