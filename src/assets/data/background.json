@@ -4,7 +4,7 @@
       "title": "Production Engineering Fellow",
       "location": "Major League Hacking",
       "time": "June 2021 - August 2021",
-      "description": "One of the 120 selected people from the total of 20,000.Automated a **CI/CD** workflow using **GitHub Actions** to deploy a production server. Served on a Docker container, guaranteeing **99.99%** uptime on a **AWS EC2** instance. Monitored the app using **cAdvisor**, **Prometheus** and **Grafana**"
+      "description": "One of the 120 selected people from the total of 20,000.Automated a **CI/CD** workflow using **GitHub Actions** to deploy a production server. Served an App on a Docker container, guaranteeing **99.99%** uptime on a **AWS EC2** instance. Monitored the app using **cAdvisor**, **Prometheus** and **Grafana**"
     },
     {
       "title": "Data Engineer",

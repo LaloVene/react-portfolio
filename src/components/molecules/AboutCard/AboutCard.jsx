@@ -2,7 +2,7 @@ import { IonCard, IonCardContent } from "@ionic/react";
 import React from "react";
 import styled from "styled-components";
 import Button from "../../atoms/Button/Button.atom";
-import Pdf from '../../../assets/Resume.pdf'
+import Pdf from "../../../assets/Resume.pdf";
 
 const Card = styled(IonCard)`
   border-radius: 1rem;
@@ -22,8 +22,8 @@ function AboutCard() {
     <Card>
       <IonCardContent>
         <Text>
-          My name is Eduardo Venegas, a Computer Science student at the University of
-          Tec de Monterrey. I have experience in the field of{" "}
+          My name is Eduardo Venegas, I am a Computer Science student at the
+          University of Tec de Monterrey. I have experience in the field of{" "}
           <b>Web Development</b>, <b>Data Engineering</b>, <b>DevOps</b> and{" "}
           <b>Site Reliability</b>.
         </Text>
