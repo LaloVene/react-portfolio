@@ -10,7 +10,7 @@ const PageWrapper = styled.div`
   padding: 1rem;
 `;
 
-function PageContainer({children}) {
+function PageContainer({ children }) {
   return (
     <IonPage>
       <IonContent fullscreen>

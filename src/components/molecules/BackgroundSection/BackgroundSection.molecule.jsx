@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import ReactMarkdown from 'react-markdown';
-import { IonIcon } from "@ionic/react";
+import ReactMarkdown from "react-markdown";
+import { IonIcon, IonBadge } from "@ionic/react";
 import { briefcase, book } from "ionicons/icons";
 
-const Container = styled.div`
-`;
+const Container = styled.div``;
 const Header = styled.div`
   display: flex;
   align-items: center;
@@ -35,7 +34,7 @@ const Content = styled.div`
   }
 `;
 
-function BackgroundSection({type, time, title, description}) {
+function BackgroundSection({ type, time, title, description, location }) {
   return (
     <Container>
       <Header>
@@ -44,6 +43,7 @@ function BackgroundSection({type, time, title, description}) {
       </Header>
       <Content>
         <h1>{title}</h1>
+        <IonBadge color="light">{location}</IonBadge>
         <ReactMarkdown>{description}</ReactMarkdown>
       </Content>
     </Container>

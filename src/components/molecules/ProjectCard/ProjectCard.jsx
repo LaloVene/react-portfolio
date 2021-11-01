@@ -49,31 +49,35 @@ const WinnerContainer = styled.div`
     cursor: pointer;
     & *:not(p) {
       background-color: rgba(0, 0, 0, 1);
+      font-size: 0rem;
     }
     & p {
-      background-color: rgba(0, 0, 0, 0.4);
+      font-weight: bold;
+      padding: 0.8rem;
+      background-color: rgba(255, 255, 255, 1);
     }
   }
 
   & p {
     backdrop-filter: blur(8px);
     display: flex;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.3);
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(0, 0, 0, 0.8);
     padding: 0.5rem;
-    border-radius: 0 0.5rem 0.5rem 0;
+    border-radius: 0.5rem;
     margin-left: -0.5rem;
     transition: all 0.2s ease-in-out;
   }
 `;
 const Medal = styled(IonIcon)`
-  backdrop-filter: blur(8px);
-  font-size: 3rem;
+  /* backdrop-filter: blur(8px); */
+  font-size: 2rem;
   color: #ffc107;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 0.5rem;
   border-radius: 100%;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 `;
 
 function ProjectCard({
@@ -107,7 +111,7 @@ function ProjectCard({
             </IonChip>
           ))}
         </Tags>
-        <Button href={githubUrl} target="_blank">
+        <Button href={githubUrl} target="_blank" color="dark">
           View Project
         </Button>
       </Container>

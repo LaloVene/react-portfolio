@@ -30,13 +30,13 @@ const AccomplishmentsContainer = styled.div`
 const accomplishmentList = [
   {
     icon: checkmarkCircle,
-    number: "97.27",
+    number: "95.98",
     text: "GPA",
   },
   {
     icon: medal,
     number: "4",
-    text: "Time best GPA",
+    text: "Awarded best GPA",
   },
   {
     icon: glasses,
@@ -61,15 +61,15 @@ function About() {
       </CardContainer>
       <AccomplishmentsContainer>
         <IonRow>
-        {accomplishmentList.map((item) => (
-          <IonCol size="6" size-md="3" key={item.text}>
-            <Accomplishment
-              icon={item.icon}
-              number={item.number}
-              text={item.text}
-            />
-          </IonCol>
-        ))}
+          {accomplishmentList.map((item) => (
+            <IonCol size="6" size-md="3" key={item.text}>
+              <Accomplishment
+                icon={item.icon}
+                number={item.number}
+                text={item.text}
+              />
+            </IonCol>
+          ))}
         </IonRow>
       </AccomplishmentsContainer>
     </Container>
