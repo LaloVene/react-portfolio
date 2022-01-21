@@ -1,10 +1,16 @@
 {
   "work": [
     {
+      "title": "AI Developer and Service Support",
+      "location": "Xira",
+      "time": "January 2022 - Present",
+      "description": "**Develop** applications according to business needs. Follow up on the **support** of the applications created. Support **technical** users. Support end users in the **testing** phase, **training** and preparation for operations."
+    },
+    {
       "title": "Production Engineering Fellow",
       "location": "Major League Hacking",
       "time": "June 2021 - August 2021",
-      "description": "One of the 120 selected people from the total of 20,000.Automated a **CI/CD** workflow using **GitHub Actions** to deploy a production server. Served an App on a Docker container, guaranteeing **99.99%** uptime on a **AWS EC2** instance. Monitored the app using **cAdvisor**, **Prometheus** and **Grafana**"
+      "description": "One of the 120 selected people from the total of 20,000. Automated a **CI/CD** workflow using **GitHub Actions** to deploy a production server. Served an App on a Docker container, guaranteeing **99.99%** uptime on a **AWS EC2** instance. Monitored the app using **cAdvisor**, **Prometheus** and **Grafana**"
     },
     {
       "title": "Data Engineer",
@@ -24,7 +30,7 @@
       "title": "Computer Science Student",
       "location": "Tecnológico de Monterrey",
       "time": "August 2019 - Present (Expected 2023)",
-      "description": "**60% Tuition** scholarship due to academic merit. Won first place in the Campus Engineering Expo. GPA: **97.27** (Achieved one of the best GPA 3 times). Member of the Algorithm Club school group."
+      "description": "**60% Tuition** scholarship due to academic merit. Won first place in the Campus Engineering Expo. GPA: **96.54** (Achieved one of the best GPA 4 times). Member of the Algorithm Club school group."
     },
     {
       "title": "React Bootcamp",
