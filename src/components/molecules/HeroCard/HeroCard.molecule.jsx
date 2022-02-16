@@ -11,6 +11,12 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  /* border-radius: 1rem;
+  margin: 1rem 0;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.2); */
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
 `;
 const AvatarContainer = styled.div`
   max-width: 6rem;

@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { IonIcon } from "@ionic/react";
 import { chevronDownCircle } from "ionicons/icons";
 import HeroCard from "../../molecules/HeroCard/HeroCard.molecule";
-import BackgroundImage from "../../../assets/hero-background.png";
+import BackgroundImage from "../../../assets/hero-background.jpg";
 
 const Container = styled.div`
-  background-color: rgba(52, 51, 83, 0.7);
+  /* background-color: rgba(52, 51, 83, 0.7); */
   width: 100%;
   border-radius: 1rem;
   display: flex;
@@ -15,8 +15,14 @@ const Container = styled.div`
   align-items: center;
   height: 70vh;
   position: relative;
-  
+
   &::before {
+    background-image: url(${BackgroundImage});
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
     content: "";
     border-radius: 1rem;
     position: absolute;
@@ -25,8 +31,6 @@ const Container = styled.div`
     z-index: -1;
     width: 100%;
     height: 100%;
-    background-image: url(${BackgroundImage});
-    filter: brightness(20%);
   }
 `;
 const Scroll = styled.div`

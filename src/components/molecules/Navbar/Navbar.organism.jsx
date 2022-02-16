@@ -4,7 +4,7 @@ import GlobalContext from "../../../utils/state/GlobalContext";
 import NavbarButton from "../../atoms/NavbarButton/NavbarButton.atom";
 
 const Container = styled.div`
-  background: #343353;
+  background: transparent;
   display: flex;
   width: 30rem;
   justify-content: space-between;

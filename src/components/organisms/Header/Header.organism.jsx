@@ -7,7 +7,7 @@ import Navbar from "../../molecules/Navbar/Navbar.organism";
 
 const Container = styled.div`
   padding: 1rem 2rem;
-  background: #343353;
+  background: black;
 `;
 const Limiter = styled.div`
   max-width: 1770px;

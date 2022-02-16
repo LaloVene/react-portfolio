@@ -4,7 +4,7 @@ import Logo from "../../atoms/Logo/Logo.atom";
 
 const Container = styled.div`
   padding: 2rem 0;
-  background: #343353;
+  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
