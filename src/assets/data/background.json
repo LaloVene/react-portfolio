@@ -1,10 +1,10 @@
 {
   "work": [
     {
-      "title": "AI Developer and Service Support",
+      "title": "Site Reliability Engineer & Developer",
       "location": "Xira",
-      "time": "January 2022 - Present",
-      "description": "**Develop** applications according to business needs and follow the **support** for such applications. **Mantain** several servers and keep processes and tasks running. **Monitor** different services in order to keep **downtimes** to a minimum. Support **technical** and **end** users in the **testing** phase, training and preparation for **operations**."
+      "time": "January 2022 - April 2022",
+      "description": "**Maintained** several servers, **monitor** services and **improved** engineering processes. Developed a **platform** to manage the client's **APIs** with payments and a subscription system using **NextJS**, **Stripe** and **Docker**. Maintained a **text analytics** model to categorize messages for clients."
     },
     {
       "title": "Production Engineering Fellow",

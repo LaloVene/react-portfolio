@@ -1,6 +1,6 @@
 [
   {
-    "title": "Platform to help developers find teammates for side projects",
+    "title": "Platform to help developers find teammates for side projects.",
     "name": "DevUp",
     "description": "Ever wanted to work on a project with others but don't know where to get started? Introducing DevUp - a platform to help developers find teammates for side projects.\n Developers can search for projects that they are interested in, and contact the current team members of the project to learn more about them and join their team. Developers that already have an project idea can make a post on DevUp to display it to other project-seeking developers and find new team members.",
     "imageUrl": "https://user-images.githubusercontent.com/74735037/129316871-f9dc82d2-dd5e-493d-bb8e-06500c2bee33.png",
@@ -27,7 +27,7 @@
     "title": "Image Captioning App to help people with limited vision.",
     "name": "Image Captioning App",
     "description": "Technology is a great way to help those in need, as it continous to develop it also presents new possibilities, one such being human vision aided and complemented by computer vision.\n This project consists of a web and mobile based app that generates captions from images captured by the device's camera. The goal of the app is to help people with limited vision to see the world around them by using an easy to use UI from where the users can take a picture, upload it to the app a be presented with an audio caption in multiple languages of what they are seeing.\n This can be run in a Web Browser or compiled to an Adroid or IOS device using the Ionic Capacitor tool.",
-    "imageUrl": "https://user-images.githubusercontent.com/54692916/133138302-e4524f4d-067d-4487-8694-c520a000411b.png",
+    "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
     "githubUrl": "https://github.com/LaloVene/Image-Captioning-Project",
     "winnerText": "HackMTY 2nd place winner",
     "winnerLink": "https://devpost.com/software/devup-d3j925",
@@ -66,7 +66,7 @@
     "title": "IoT device control App built in Angular using Firebase and a NodeMCU board.",
     "name": "Room System",
     "description": "Won 1rst place in the Campus Engineering Expo. App built in Angular to control a room´s light, fan, doors and windows using Firebase and a NodeMCU board. Get the current weather with an API and use it to predict if it is going to rain using a Deep Learning Keras model.",
-    "imageUrl": "https://user-images.githubusercontent.com/54692916/133336327-fddf1199-5542-4418-a0d8-a6a8ca5bb63b.png",
+    "imageUrl": "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "githubUrl": "https://github.com/LaloVene/Intelligent-Room-Project",
     "winnerText": "Engineering Expo winner",
     "winnerLink": "https://user-images.githubusercontent.com/54692916/133326720-97f0df65-594d-4686-a9b2-0ce225c58469.png",
