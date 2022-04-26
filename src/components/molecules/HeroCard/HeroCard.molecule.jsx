@@ -40,7 +40,7 @@ function HeroCard() {
       <AvatarContainer>
         <Avatar />
       </AvatarContainer>
-      <Name>Lalo Venegas</Name>
+      <Name>Eduardo Venegas</Name>
       <Description>CS Student @ Tec de Monterrey</Description>
       <SocialMedia />
       <Button color="danger" href="mailto:lalohdez77@gmail.com">

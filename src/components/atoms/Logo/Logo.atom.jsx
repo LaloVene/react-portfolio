@@ -20,7 +20,7 @@ const LogoText = styled.div`
 function Logo({ black }) {
   return (
     <LogoText black={black}>
-      Lalo Venegas<span>.</span>
+      Eduardo Venegas<span>.</span>
     </LogoText>
   );
 }
