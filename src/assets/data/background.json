@@ -27,9 +27,15 @@
   ],
   "education": [
     {
+      "title": "Incoming Computer Science Student",
+      "location": "Universität Ülm",
+      "time": "October 2022 - July 2023",
+      "description": "Got **accepted** as an international student with a **full scholarship** provided by the German government."
+    },
+    {
       "title": "Computer Science Student",
       "location": "Tecnológico de Monterrey",
-      "time": "August 2019 - Present (Expected 2023)",
+      "time": "August 2019 - Present (Expected July 2023)",
       "description": "**60% Tuition** scholarship due to academic merit. Won first place in the Campus Engineering Expo. GPA: **96.54** (Achieved one of the best GPA 4 times). Member of the Algorithm Club school group."
     },
     {
