@@ -30,7 +30,7 @@ const AccomplishmentsContainer = styled.div`
 const accomplishmentList = [
   {
     icon: checkmarkCircle,
-    number: "96.54",
+    number: "97.51",
     text: "GPA",
   },
   {
