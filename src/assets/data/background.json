@@ -1,6 +1,12 @@
 {
   "work": [
     {
+      "title": "Data Analyst Intern",
+      "location": "BMW Group",
+      "time": "March 2023 - Present",
+      "description": "Worked on learning-based solutions for **predictive maintenance of vehicles**. Designed and implemented **data science applications**, machine learning **pipelines**, and **model performance** tracking tools"
+    },
+    {
       "title": "Site Reliability Engineer & Developer",
       "location": "Xira",
       "time": "January 2022 - April 2022",
@@ -29,13 +35,13 @@
     {
       "title": "Computer Science Exchange Student",
       "location": "Universität Ulm",
-      "time": "October 2022 - July 2023",
+      "time": "October 2022 - September 2023",
       "description": "Got **accepted** as an international student with a **full scholarship** provided by the DAAD."
     },
     {
       "title": "Computer Science Student",
       "location": "Tecnológico de Monterrey",
-      "time": "August 2019 - Present (Expected July 2023)",
+      "time": "August 2019 - Present (Expected July 2024)",
       "description": "**60% Tuition** scholarship due to academic merit. Won first place in the Campus Engineering Expo. GPA: **97.51** (Achieved one of the best GPA 4 times). Member of the Algorithm Club school group."
     },
     {
