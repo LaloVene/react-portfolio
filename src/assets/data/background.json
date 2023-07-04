@@ -4,7 +4,7 @@
       "title": "Data Analyst Intern",
       "location": "BMW Group",
       "time": "March 2023 - Present",
-      "description": "Worked on learning-based solutions for **predictive maintenance of vehicles**. Designed and implemented **data science applications**, machine learning **pipelines**, and **model performance** tracking tools"
+      "description": "Created a **prediction algorithm** for detecting a feature change with a **99.94% accuracy**. Found **root cause** to **missing database values**, created a new processing pipeline and **increasing service demand by 62%**. Developed a **Streamlit** dashboard to **tweak a production model** and get data **output in real time (<8 seconds)**. Setup environment to work with **PySpark** in the cloud."
     },
     {
       "title": "Site Reliability Engineer & Developer",
