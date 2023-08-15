@@ -3,8 +3,8 @@
     {
       "title": "Data Analyst Intern",
       "location": "BMW Group",
-      "time": "March 2023 - Present",
-      "description": "Created a **prediction algorithm** for detecting a feature change with a **99.94% accuracy**. Found **root cause** to **missing database values**, created a new processing pipeline and **increasing service demand by 62%**. Developed a **Streamlit** dashboard to **tweak a production model** and get data **output in real time (<8 seconds)**. Setup environment to work with **PySpark** in the cloud."
+      "time": "March 2023 - September 2023",
+      "description": "Developed a high-accuracy **algorithm** for **detecting external battery replacements**. Resolved the issue of **missing database values** and implemented a **pipeline** to forward fill the gaps, **boosting service demand by 62%**. Designed a **Streamlit dashboard** to adjust prediction model parameters and obtain **real-time output** (**<8 seconds**) Configured **cloud-based environments** for working with **PySpark**. Applied various **visualization and data analytics** techniques to gain insights from **diverse data sources**. Identified **data patterns** in failing vehicle components and leveraged this information to **perform recalls only the impacted vehicles**."
     },
     {
       "title": "Site Reliability Engineer & Developer",
@@ -15,7 +15,7 @@
     {
       "title": "Production Engineering Fellow",
       "location": "Major League Hacking",
-      "time": "June 2021 - August 2021",
+      "time": "June 2021 - September 2021",
       "description": "One of the 120 selected people from the total of 20,000. Automated a **CI/CD** workflow using **GitHub Actions** to deploy a production server. Served an App on a Docker container, guaranteeing **99.99%** uptime on a **AWS EC2** instance. Monitored the app using **cAdvisor**, **Prometheus** and **Grafana**"
     },
     {
