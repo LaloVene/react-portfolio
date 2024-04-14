@@ -3,10 +3,9 @@ import styled from "styled-components";
 import { IonIcon } from "@ionic/react";
 import { chevronDownCircle } from "ionicons/icons";
 import HeroCard from "../../molecules/HeroCard/HeroCard.molecule";
-import BackgroundImage from "../../../assets/hero-background.jpg";
+import BackgroundImage from "../../../assets/hero-background3.jpeg";
 
 const Container = styled.div`
-  /* background-color: rgba(52, 51, 83, 0.7); */
   width: 100%;
   border-radius: 1rem;
   display: flex;
@@ -19,10 +18,9 @@ const Container = styled.div`
   &::before {
     background-image: url(${BackgroundImage});
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-size: cover;
     background-position: center;
-    filter: brightness(60%);
+    filter: brightness(80%);
     content: "";
     border-radius: 1rem;
     position: absolute;

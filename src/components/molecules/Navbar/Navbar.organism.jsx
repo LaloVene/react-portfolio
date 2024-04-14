@@ -6,7 +6,7 @@ import NavbarButton from "../../atoms/NavbarButton/NavbarButton.atom";
 const Container = styled.div`
   background: transparent;
   display: flex;
-  width: 30rem;
+  width: 32rem;
   justify-content: space-between;
 
   @media (max-width: 768px) {

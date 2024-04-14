@@ -3,8 +3,8 @@ import styled from "styled-components";
 import Logo from "../../atoms/Logo/Logo.atom";
 
 const Container = styled.div`
-  padding: 2rem 0;
-  background: black;
+  padding-bottom: 2rem;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -5,7 +5,7 @@ const LogoText = styled.div`
   font-weight: 800;
   font-size: 2rem;
   cursor: pointer;
-  color: white;
+  color: black;
   ${(props) =>
     props.black &&
     css`
