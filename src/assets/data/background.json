@@ -1,10 +1,10 @@
 {
   "work": [
     {
-      "title": "OCI Software Developer II",
+      "title": "Cloud Software Engineer",
       "location": "Oracle",
       "time": "November 2023 - Present",
-      "description": "Working on the **Oracle Cloud Infrastructure** in the team of Big **Data Service**. Developed the console for managing and deploying **big data clusters**.  Designing, implementing, and maintaining scalable and efficient solutions on OCI."
+      "description": "Worked on the **Oracle Cloud Infrastructure** in the team of Big **Data Service** in **Oracle Analytics**. Developed the console for managing and deploying **big data clusters**.  Designing, implementing, and maintaining scalable and efficient solutions on OCI."
     },
     {
       "title": "Data Analyst Intern",
@@ -16,13 +16,13 @@
       "title": "Site Reliability Engineer & Developer",
       "location": "Xira",
       "time": "January 2022 - April 2022",
-      "description": "**Maintained** several servers, **monitor** services and **improved** engineering processes. Developed a **platform** to manage the client's **APIs** with payments and a subscription system using **NextJS**, **Stripe** and **Docker**. Maintained a **text analytics** model to categorize messages for clients."
+      "description": "**Maintained** over 10 servers, **monitored** services and **enhanced** engineering processes. Built a **platform** to manage client **APIs** with payments and a subscription system using **NextJS**, **Stripe** and **Docker**. Maintained a **text analytics** model for message categorization, benefiting clients."
     },
     {
       "title": "Production Engineering Fellow",
-      "location": "Major League Hacking",
+      "location": "Major League Hacking & Meta",
       "time": "June 2021 - September 2021",
-      "description": "One of the 120 selected people from the total of 20,000. Automated a **CI/CD** workflow using **GitHub Actions** to deploy a production server. Served an App on a Docker container, guaranteeing **99.99%** uptime on a **AWS EC2** instance. Monitored the app using **cAdvisor**, **Prometheus** and **Grafana**"
+      "description": "Selected among 120 out of 20,000 applicants. Automated a **CI/CD** workflow using **GitHub Actions** for efficient deployment to a production server. Implemented app monitoring with **cAdvisor**, **Prometheus** and **Grafana**. Ensured **99.99% uptime** hosting it in a **Docker** container on a **AWS EC2** instance."
     },
     {
       "title": "Data Engineer",
@@ -39,28 +39,28 @@
   ],
   "education": [
     {
-      "title": "BSc Computer Science",
+      "title": "MSc. Data Science and Artificial Intelligence",
+      "location": "Universität des Saarlandes",
+      "time": "October 2024 - September 2026",
+      "description": "Coursing Master degree. **Key Courses:** _Machine Learning, Deep Learning, Data Mining, Big Data, Natural Language Processing, Computer Vision, Reinforcement Learning, and Optimization Techniques_."
+    },
+    {
+      "title": "BSc. Computer Science",
       "location": "Tecnológico de Monterrey",
       "time": "August 2019 - December 2023",
-      "description": "**60% Tuition** scholarship due to academic merit. Won first place in the Campus Engineering Expo. GPA: **94.60** (Achieved one of the best GPA 4 times). Member of the Algorithm Club school group."
+      "description": "Grade: 94.6 / 100. Five times best software engineering GPA. **60% tuition** scholarship due to academic merit. Strong foundation in mathematical modelling, statistical methods, and computational techniques."
     },
     {
       "title": "Computer Science Exchange Student",
       "location": "Universität Ulm",
       "time": "October 2022 - September 2023",
-      "description": "Awarded a **full scholarship** from the **DAAD**. COURSES: Computer Vision II | Autonomous Driving and Assistance Systems | Statistics | Automobile User Interfaces | Web Development"
+      "description": "**Full scholarship** recipient from **DAAD**. _Computer Vision II | Autonomous Driving and Assistance Systems | Statistics_"
     },
     {
-      "title": "React Bootcamp",
-      "location": "Wizeline",
-      "time": "July 2021 - September 2021",
-      "description": "Learned about Core Concepts, Styling, Patterns, Routing, Testing and TDD. Created a YouTube clone app using the **YouTube v3 API** and **React Hooks** for managing state. Developed app using a **TDD** approach with **Jest**."
-    },
-    {
-      "title": "Technologist in Automatic Control and Instrumentation",
+      "title": "Technologist in Automation, Robotics and Instrumentation",
       "location": "CETI Colomos",
       "time": "August 2015 - July 2019",
-      "description": "**Thesis Project:** Constructed an Autonomous Tennis Machine from the ground up using electronic components and a PLC."
+      "description": "**Thesis Project:** Built an Autonomous Tennis Machine using **power & digital electronics** and a **microcontroller**. **Key Coursework:** _Electronics, Robotics and Industrial Automation, Electricity, Instrumentation, PLCs and System Design_."
     }
   ]
 }
