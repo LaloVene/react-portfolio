@@ -1,6 +1,12 @@
 {
   "work": [
     {
+      "title": "Data Scientist Werkstudent",
+      "location": "August-Wilhelm Scheer Institute",
+      "time": "October 2024 - Present",
+      "description": "Designed and implemented a **RAG** system with **LangChain** and **HuggingFace**, incorporating advanced **Information Retrieval** methods to boost the precision and recall of data retrieval. Enhanced autoencoder model performance through the application of **Federated Learning**, enabling distributed training across different devices. Created a robust entity matching solution capable of aligning disparate data types, powered by **Llama Instruct** and presented via an interactive **Streamlit** dashboard."
+    },
+    {
       "title": "Cloud Software Engineer",
       "location": "Oracle",
       "time": "November 2023 - October 2024",
@@ -42,7 +48,7 @@
       "title": "MSc. Data Science and Artificial Intelligence",
       "location": "Universität des Saarlandes",
       "time": "October 2024 - September 2026",
-      "description": "Coursing Master degree. **Key Courses:** _Machine Learning, Neural Networks, Quantum AI, LLM with Autonomous Agents_."
+      "description": "Coursing Master degree. **Key Courses:** _Machine Learning, Neural Networks, Quantum AI, Natural Language Processing, Machine Translation, Computer Vision, Image Processing_."
     },
     {
       "title": "BSc. Computer Science",
