@@ -1,19 +1,17 @@
 import React from "react";
-import styled from "styled-components";
+import { Box } from "@mantine/core";
 import DiplomaData from "../../../assets/data/diplomas.json";
 import DiplomaSection from "../../molecules/DiplomaSection/DiplomaSection.molecule";
 
-const Container = styled.div``;
-
 function Diplomas() {
   return (
-    <Container>
+    <Box>
       <DiplomaSection
         title="Professional Certificates"
         diplomaData={DiplomaData.certificates}
       />
       <DiplomaSection title="Education" diplomaData={DiplomaData.education} />
-    </Container>
+    </Box>
   );
 }
 

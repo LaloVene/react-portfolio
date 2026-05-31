@@ -1,27 +1,14 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import { Text } from "@mantine/core";
 
-const LogoText = styled.div`
-  font-weight: 800;
-  font-size: 2rem;
-  cursor: pointer;
-  color: black;
-  ${(props) =>
-    props.black &&
-    css`
-      color: black;
-    `}
-
-  span {
-    color: red;
-  }
-`;
-
-function Logo({ black }) {
+function Logo() {
   return (
-    <LogoText black={black}>
-      Eduardo Venegas<span>.</span>
-    </LogoText>
+    <Text fw={800} fz="2rem" c="black">
+      Eduardo Venegas
+      <Text component="span" c="red">
+        .
+      </Text>
+    </Text>
   );
 }
 

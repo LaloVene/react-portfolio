@@ -1,44 +1,23 @@
 import React, { useContext } from "react";
-import { IonHeader, IonToolbar } from "@ionic/react";
+import { Box, Group } from "@mantine/core";
 import GlobalContext from "../../../utils/state/GlobalContext";
-import styled from "styled-components";
 import Logo from "../../atoms/Logo/Logo.atom";
 import Navbar from "../../molecules/Navbar/Navbar.organism";
-
-const StyledHeader = styled(IonHeader)`
-  &:after {
-    background-image: none;
-  }
-`;
-
-const Container = styled.div`
-  padding: 1rem 2rem;
-  padding-bottom: 0;
-  background: white;
-  box-shadow: none;
-`;
-const Limiter = styled.div`
-  max-width: 1770px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
 
 function Header() {
   const { state } = useContext(GlobalContext);
 
   return (
-    <StyledHeader>
-      <IonToolbar>
-        <Container ref={state.homeRef}>
-          <Limiter>
+    <Box pos="sticky" top={0} style={{ zIndex: 10 }}>
+      <Box>
+        <Box ref={state.homeRef} pt="1rem" px="2rem" bg="white">
+          <Group justify="space-between" align="center" maw={1770} mx="auto">
             <Logo />
             <Navbar />
-          </Limiter>
-        </Container>
-      </IonToolbar>
-    </StyledHeader>
+          </Group>
+        </Box>
+      </Box>
+    </Box>
   );
 }
 

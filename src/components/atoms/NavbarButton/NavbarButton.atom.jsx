@@ -1,24 +1,23 @@
-import { IonButton } from "@ionic/react";
+import { Button as MantineButton } from "@mantine/core";
 import React from "react";
-import styled from "styled-components";
-
-const Button = styled(IonButton)`
-  --color: black;
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 0;
-  --background: rgba(0, 0, 0, 0.08);
-   --box-shadow: none;
-    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-  --border-radius: 0.5rem;
-
-  &:hover {
-    --color: hsl(239, 82%, 72%);
-  }
-`;
 
 function NavbarButton({ children, onClick }) {
-  return <Button onClick={onClick}>{children}</Button>;
+  return (
+    <MantineButton
+      onClick={onClick}
+      variant="light"
+      color="gray"
+      radius="md"
+      c="black"
+      fz="1rem"
+      fw={700}
+      m={0}
+      bg="rgba(0, 0, 0, 0.08)"
+      shadow="none"
+    >
+      {children}
+    </MantineButton>
+  );
 }
 
 export default NavbarButton;

@@ -1,52 +1,34 @@
 import React from "react";
-import styled from "styled-components";
 import ReactMarkdown from "react-markdown";
-import { IonIcon, IonBadge } from "@ionic/react";
-import { briefcase, book } from "ionicons/icons";
-
-const Container = styled.div``;
-const Header = styled.div`
-  display: flex;
-  align-items: center;
-
-  & p {
-    margin-left: 1rem;
-    color: hsl(0, 0%, 60%);
-  }
-`;
-const Icon = styled(IonIcon)`
-  font-size: 1.5rem;
-`;
-const Content = styled.div`
-  padding-left: 1.8rem;
-  border-left: 3px solid hsla(352, 80%, 50%, 0.5);
-  margin-left: 0.6rem;
-  padding-bottom: 2rem;
-
-  & h1 {
-    font-size: 1.5rem;
-    padding: 0.5rem 0;
-    font-weight: bold;
-    color: black;
-  }
-  & p {
-    line-height: 1.5rem;
-  }
-`;
+import { Badge, Box, Group, Text, Title } from "@mantine/core";
+import { IconBook, IconBriefcase } from "@tabler/icons-react";
 
 function BackgroundSection({ type, time, title, description, location }) {
+  const Icon = type === "Work" ? IconBriefcase : IconBook;
+
   return (
-    <Container>
-      <Header>
-        <Icon color="danger" icon={type === "Work" ? briefcase : book} />
-        <p>{time}</p>
-      </Header>
-      <Content>
-        <h1>{title}</h1>
-        <IonBadge color="light">{location}</IonBadge>
-        <ReactMarkdown>{description}</ReactMarkdown>
-      </Content>
-    </Container>
+    <Box>
+      <Group gap="0.25rem" align="center">
+        <Icon size={24} />
+        <Text ml="1rem" c="dimmed">
+          {time}
+        </Text>
+      </Group>
+      <Box
+        pl="1.8rem"
+        ml="0.6rem"
+        pb="2rem"
+        bdl="3px solid hsla(352, 80%, 50%, 0.5)"
+      >
+        <Title order={3} py="0.5rem" c="black" fz="1.5rem">
+          {title}
+        </Title>
+        <Badge color="gray">{location}</Badge>
+        <Box lh={1.5}>
+          <ReactMarkdown>{description}</ReactMarkdown>
+        </Box>
+      </Box>
+    </Box>
   );
 }
 

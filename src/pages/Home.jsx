@@ -1,6 +1,6 @@
 import React, { useReducer, useRef, useEffect } from "react";
+import { Box } from "@mantine/core";
 import PageContainer from "../components/templates/PageContainer.template";
-import styled from "styled-components";
 import GlobalContext from "../utils/state/GlobalContext";
 import GlobalReducer, { initialState } from "../utils/state/GlobalReducer";
 import Hero from "../components/organisms/Hero/Hero.organism";
@@ -10,11 +10,6 @@ import Background from "../components/organisms/Background/Background.organism";
 import Projects from "../components/organisms/Projects/Projects.organism";
 import Diplomas from "../components/organisms/Diplomas/Diplomas.organism";
 import Skills from "../components/organisms/Skills/Skills.organism";
-
-const ContentWrapper = styled.div`
-  max-width: 1280px;
-  margin: 0 auto;
-`;
 
 const Home = () => {
   const [state, dispatch] = useReducer(GlobalReducer, initialState);
@@ -36,7 +31,7 @@ const Home = () => {
     <GlobalContext.Provider value={{ state, dispatch }}>
       <PageContainer>
         <Hero />
-        <ContentWrapper>
+        <Box maw={1280} mx="auto">
           <Section ref={state.aboutRef} title="About Me">
             <About />
           </Section>
@@ -52,7 +47,7 @@ const Home = () => {
           <Section title="Certificates">
             <Diplomas />
           </Section>
-        </ContentWrapper>
+        </Box>
       </PageContainer>
     </GlobalContext.Provider>
   );

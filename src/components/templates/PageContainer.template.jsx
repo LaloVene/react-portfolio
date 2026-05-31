@@ -1,24 +1,19 @@
 import React from "react";
-import { IonPage, IonContent } from "@ionic/react";
-import styled from "styled-components";
+import { Box } from "@mantine/core";
 import Header from "../organisms/Header/Header.organism";
 import Footer from "../organisms/Footer/Footer.organism";
 
-const PageWrapper = styled.div`
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: 1rem;
-`;
-
 function PageContainer({ children }) {
   return (
-    <IonPage>
-      <IonContent fullscreen>
+    <Box>
+      <Box>
         <Header />
-        <PageWrapper>{children}</PageWrapper>
+        <Box maw={1800} mx="auto" p="1rem">
+          {children}
+        </Box>
         <Footer />
-      </IonContent>
-    </IonPage>
+      </Box>
+    </Box>
   );
 }
 

@@ -1,7 +1,0 @@
-{
-  "name": "react-portfolio",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react"
-}

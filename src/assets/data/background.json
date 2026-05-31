@@ -46,7 +46,7 @@
       "title": "Full Stack Developer",
       "location": "Jiit Technologies",
       "time": "October 2020 - June 2021",
-      "description": "Developed a platform for **COVID tracking**, a **Marketplace** site and an **ERP** platform that can organize inventory, human resources shipments, income and expenses. Used ***Ionic Angular**, **Typescript**, **Cordova**, **SQL** and **Flask**."
+      "description": "Developed a platform for **COVID tracking**, a **Marketplace** site and an **ERP** platform that can organize inventory, human resources shipments, income and expenses. Used **Angular + Capacitor**, **Typescript**, **Cordova**, **SQL** and **Flask**."
     }
   ],
   "education": [

@@ -1,28 +1,23 @@
 import React from "react";
-import styled from "styled-components";
-
-const Title = styled.h2`
-  font-size: 2.5rem;
-  font-weight: 900;
-  position: relative;
-  margin-left: 1rem;
-  margin-top: 3rem;
-`;
-const BackText = styled.p`
-  position: absolute;
-  top: -6rem;
-  left: -1rem;
-  font-size: 4rem;
-  font-weight: 900;
-  z-index: -1;
-  color: hsl(0, 0%, 90%);
-`;
+import { Text, Title } from "@mantine/core";
 
 function SectionTitle({ children }) {
   return (
-    <Title>
+    <Title order={2} ml="1rem" mt="3rem" fz="2.5rem" fw={900} pos="relative">
       {children}
-      <BackText>{children}</BackText>
+      <Text
+        component="span"
+        aria-hidden="true"
+        pos="absolute"
+        top="-6rem"
+        left="-1rem"
+        fz="4rem"
+        fw={900}
+        c="hsl(0, 0%, 90%)"
+        style={{ zIndex: -1 }}
+      >
+        {children}
+      </Text>
     </Title>
   );
 }

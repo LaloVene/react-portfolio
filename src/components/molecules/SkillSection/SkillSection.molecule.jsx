@@ -1,43 +1,21 @@
 import React from "react";
-import { IonRow, IonCol } from "@ionic/react";
-import styled from "styled-components";
+import { Box, SimpleGrid, Text } from "@mantine/core";
 import SkillItem from "../SkillItem/SkillItem.molecule";
 
-const Container = styled.div`
-  margin-left: 1rem;
-
-  @media (max-width: 768px) {
-    margin-left: 0.5rem;
-  }
-  & h2 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0;
-  }
-`;
-const Col = styled(IonCol)`
-  padding: 0;
-`;
-
-function SkillSection({ title, skills }) {
+function SkillSection({ title, skills = [] }) {
   return (
-    <Container>
-      <h2>{title}</h2>
-      <IonRow>
+    <Box ml={{ base: "0.5rem", md: "1rem" }}>
+      <Text fw={600} fz="1.2rem" mb={4}>
+        {title}
+      </Text>
+      <SimpleGrid cols={{ base: 2, sm: 3, md: 5, lg: 6, xl: 8 }} spacing="sm">
         {skills.map((skill) => (
-          <Col
-            size="6"
-            sizeSm="3"
-            sizeMd="2.2"
-            sizeLg="1.8"
-            sizeXl="1.5"
-            key={skill.name}
-          >
+          <div key={skill.name}>
             <SkillItem {...skill} />
-          </Col>
+          </div>
         ))}
-      </IonRow>
-    </Container>
+      </SimpleGrid>
+    </Box>
   );
 }
 

@@ -1,26 +1,26 @@
 import React from "react";
-import { IonButton } from "@ionic/react";
-import styled from "styled-components";
+import { Button as MantineButton } from "@mantine/core";
 
-const Button = styled(IonButton)`
-  color: white;
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 0;
-  /* --background: none;
-  --box-shadow: none; */
+function Button({ children, href, color, ...props }) {
+  const baseProps = {
+    color,
+    radius: "xl",
+    c: "white",
+    fz: "1rem",
+    fw: 700,
+    m: 0,
+    ...props,
+  };
 
-  &:hover {
-    /* --color: #F5C852; */
-  }
-`;
-
-function NavbarButton({children, ...props}) {
-  return (
-    <Button {...props} shape="round">
+  if (href) {
+    return (
+      <MantineButton component="a" href={href} {...baseProps}>
         {children}
-    </Button>
-  );
+      </MantineButton>
+    );
+  }
+
+  return <MantineButton {...baseProps}>{children}</MantineButton>;
 }
 
-export default NavbarButton;
+export default Button;

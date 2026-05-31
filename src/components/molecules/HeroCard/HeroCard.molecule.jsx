@@ -1,48 +1,37 @@
 import React from "react";
-import styled from "styled-components";
+import { Box, Text } from "@mantine/core";
 import Avatar from "../../atoms/Avatar/Avatar.atom";
 import Button from "../../atoms/Button/Button.atom";
 import SocialMedia from "../SocialMedia/SocialMedia.molecule";
 
-const Container = styled.div`
-  text-align: center;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  backdrop-filter: blur(20px);
-  border-radius: 1rem;
-`;
-const AvatarContainer = styled.div`
-  max-width: 6rem;
-`;
-const Name = styled.p`
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0;
-  margin-top: 1rem;
-`;
-const Description = styled.p`
-  font-size: 1rem;
-  margin: 0;
-  margin-top: 0.5rem;
-  color: hsl(0, 0%, 70%);
-`;
-
 function HeroCard() {
   return (
-    <Container>
-      <AvatarContainer>
+    <Box
+      ta="center"
+      c="white"
+      p="1rem"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        backdropFilter: "blur(20px)",
+        borderRadius: "1rem",
+      }}
+    >
+      <Box maw="6rem">
         <Avatar />
-      </AvatarContainer>
-      <Name>Eduardo Venegas</Name>
-      <Description>Data Engineer</Description>
+      </Box>
+      <Text fz="2rem" fw={700} m={0} mt="1rem" c="white">
+        Eduardo Venegas
+      </Text>
+      <Text fz="1rem" m={0} mt="0.5rem" c="gray.4">
+        Data Engineer
+      </Text>
       <SocialMedia />
-      <Button color="danger" href="mailto:lalohdez77@gmail.com">
+      <Button color="red" href="mailto:lalohdez77@gmail.com">
         Contact Me
       </Button>
-    </Container>
+    </Box>
   );
 }
 

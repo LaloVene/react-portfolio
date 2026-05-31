@@ -1,18 +1,7 @@
 import React, { useContext } from "react";
-import styled from "styled-components";
+import { Group } from "@mantine/core";
 import GlobalContext from "../../../utils/state/GlobalContext";
 import NavbarButton from "../../atoms/NavbarButton/NavbarButton.atom";
-
-const Container = styled.div`
-  background: transparent;
-  display: flex;
-  width: 32rem;
-  justify-content: space-between;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
 
 const scrollTo = (ref) => {
   if (ref && ref.current /* + other conditions */) {
@@ -45,13 +34,13 @@ const Navbar = () => {
     },
   ];
   return (
-    <Container>
+    <Group justify="space-between" w="32rem" visibleFrom="md">
       {items.map((item) => (
         <NavbarButton onClick={item.onClick} key={item.label}>
           {item.label}
         </NavbarButton>
       ))}
-    </Container>
+    </Group>
   );
 };
 

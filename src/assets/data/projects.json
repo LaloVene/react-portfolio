@@ -19,7 +19,7 @@
     "winnerLink": "https://devpost.com/software/see-your-world",
     "tags": [
       "Docker",
-      "Ionic React",
+      "React + Capacitor",
       "AWS EC2",
       "CI/CD",
       "NGINX",
@@ -35,7 +35,7 @@
   {
     "title": "Image Captioning App to help people with limited vision.",
     "name": "Image Captioning App",
-    "description": "Technology is a great way to help those in need, as it continous to develop it also presents new possibilities, one such being human vision aided and complemented by computer vision.\n This project consists of a web and mobile based app that generates captions from images captured by the device's camera. The goal of the app is to help people with limited vision to see the world around them by using an easy to use UI from where the users can take a picture, upload it to the app a be presented with an audio caption in multiple languages of what they are seeing.\n This can be run in a Web Browser or compiled to an Adroid or IOS device using the Ionic Capacitor tool.",
+    "description": "Technology is a great way to help those in need, as it continous to develop it also presents new possibilities, one such being human vision aided and complemented by computer vision.\n This project consists of a web and mobile based app that generates captions from images captured by the device's camera. The goal of the app is to help people with limited vision to see the world around them by using an easy to use UI from where the users can take a picture, upload it to the app a be presented with an audio caption in multiple languages of what they are seeing.\n This can be run in a Web Browser or compiled to an Adroid or IOS device using the Capacitor toolchain.",
     "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
     "githubUrl": "https://github.com/LaloVene/Image-Captioning-Project",
     "winnerText": "HackMTY 2nd place winner",
@@ -43,7 +43,7 @@
     "url": "",
     "tags": [
       "Docker",
-      "Ionic Angular",
+      "Angular + Capacitor",
       "Google Cloud",
       "NGINX",
       "Flask",
@@ -81,7 +81,7 @@
     "winnerLink": "https://user-images.githubusercontent.com/54692916/133326720-97f0df65-594d-4686-a9b2-0ce225c58469.png",
     "url": "",
     "tags": [
-      "Ionic Angular",
+      "Angular + Capacitor",
       "Firebase",
       "NodeMCU",
       "TensorFlow JS",

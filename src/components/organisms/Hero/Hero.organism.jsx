@@ -1,61 +1,45 @@
 import React from "react";
-import styled from "styled-components";
-import { IonIcon } from "@ionic/react";
-import { chevronDownCircle } from "ionicons/icons";
+import { Box, Text } from "@mantine/core";
+import { IconChevronDown } from "@tabler/icons-react";
 import HeroCard from "../../molecules/HeroCard/HeroCard.molecule";
 import BackgroundImage from "../../../assets/hero-background3.jpeg";
 
-const Container = styled.div`
-  width: 100%;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-  position: relative;
-
-  &::before {
-    background-image: url(${BackgroundImage});
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: brightness(80%);
-    content: "";
-    border-radius: 1rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-  }
-`;
-const Scroll = styled.div`
-  position: absolute;
-  bottom: 0;
-  font-size: 1rem;
-  color: hsl(0, 0%, 70%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 2rem;
-`;
-const DownIcon = styled(IonIcon)`
-  margin-top: 1rem;
-  font-size: 2rem;
-`;
-
 function Hero() {
   return (
-    <Container>
+    <Box
+      w="100%"
+      h="70vh"
+      pos="relative"
+      style={{
+        borderRadius: "1rem",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${BackgroundImage})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <HeroCard />
-      <Scroll>
-        Scroll Down
-        <DownIcon icon={chevronDownCircle} />
-      </Scroll>
-    </Container>
+      <Box
+        pos="absolute"
+        bottom={0}
+        c="hsl(0, 0%, 70%)"
+        pb="2rem"
+        style={{
+          fontSize: "1rem",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Text fz="1rem">Scroll Down</Text>
+        <IconChevronDown size={32} style={{ marginTop: "1rem" }} />
+      </Box>
+    </Box>
   );
 }
 

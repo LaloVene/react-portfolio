@@ -1,22 +1,19 @@
 import React from "react";
-import { IonRow, IonCol } from "@ionic/react";
-import styled from "styled-components";
+import { Box, Grid } from "@mantine/core";
 import ProjectCard from "../../molecules/ProjectCard/ProjectCard";
 import ProjectData from "../../../assets/data/projects.json";
 
-const Container = styled.div``;
-
 function Projects() {
   return (
-    <Container>
-      <IonRow>
+    <Box>
+      <Grid>
         {ProjectData.map((project) => (
-          <IonCol size="12" sizeLg="6" sizeXl="4" key={project.name}>
+          <Grid.Col span={{ base: 12, lg: 6, xl: 4 }} key={project.name}>
             <ProjectCard {...project} />
-          </IonCol>
+          </Grid.Col>
         ))}
-      </IonRow>
-    </Container>
+      </Grid>
+    </Box>
   );
 }
 
