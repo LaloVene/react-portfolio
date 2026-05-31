@@ -1,11 +1,15 @@
-import { Card as MantineCard } from "@mantine/core";
 import React from "react";
+import { Card as HeroCard } from "@heroui/react";
 
-function Card({ children, ...props }) {
+function Card({ children, className = "", ...props }) {
   return (
-    <MantineCard withBorder p="md" radius="md" shadow="md" {...props}>
+    <HeroCard
+      isBordered
+      className={`p-4 rounded-xl shadow-md border-divider hover:shadow-lg transition-shadow duration-300 bg-content1 ${className}`}
+      {...props}
+    >
       {children}
-    </MantineCard>
+    </HeroCard>
   );
 }
 

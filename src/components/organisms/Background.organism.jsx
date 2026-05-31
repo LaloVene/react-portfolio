@@ -1,18 +1,17 @@
 import React from "react";
-import { Grid } from "@mantine/core";
 import BackgroundCard from "../molecules/BackgroundCard.molecule";
 import Data from "../../assets/data/background.json";
 
 function Background() {
   return (
-    <Grid>
-      <Grid.Col span={{ base: 12, lg: 6 }}>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
+      <div>
         <BackgroundCard type="Work" data={Data.work} />
-      </Grid.Col>
-      <Grid.Col span={{ base: 12, lg: 6 }}>
+      </div>
+      <div>
         <BackgroundCard type="Education" data={Data.education} />
-      </Grid.Col>
-    </Grid>
+      </div>
+    </div>
   );
 }
 

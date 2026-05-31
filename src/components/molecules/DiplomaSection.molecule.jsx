@@ -1,21 +1,20 @@
 import React from "react";
-import { Box, Grid, Text } from "@mantine/core";
 import DiplomaCard from "../molecules/DiplomaCard.molecule";
 
 function DiplomaSection({ title, diplomaData }) {
   return (
-    <Box ml="0.5rem" mt="2rem">
-      <Text fz="1.5rem" fw={700}>
+    <div className="ml-2 mt-8">
+      <p className="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
         {title}
-      </Text>
-      <Grid>
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         {diplomaData.map((diploma) => (
-          <Grid.Col span={{ base: 12, lg: 6, xl: 4 }} key={diploma.title}>
+          <div key={diploma.title}>
             <DiplomaCard {...diploma} />
-          </Grid.Col>
+          </div>
         ))}
-      </Grid>
-    </Box>
+      </div>
+    </div>
   );
 }
 

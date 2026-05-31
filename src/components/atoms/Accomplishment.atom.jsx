@@ -1,21 +1,20 @@
 import React from "react";
-import { Group, Text, ThemeIcon } from "@mantine/core";
 
 function Accomplishment({ icon: Icon, number, text }) {
   return (
-    <Group align="center" gap="sm" wrap="nowrap">
-      <ThemeIcon color="blue" variant="light" radius="xl" size="xl" mr="sm">
-        <Icon size={20} />
-      </ThemeIcon>
-      <div>
-        <Text m={0} fw={700} fz="1.5rem">
-          {number}
-        </Text>
-        <Text m={0} fz="1rem" c="dimmed">
-          {text}
-        </Text>
+    <div className="flex flex-row items-center gap-3 flex-nowrap p-4 rounded-xl hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors duration-200">
+      <div className="flex items-center justify-center bg-brand-primary/10 text-brand-primary rounded-full p-3 min-w-[3rem] min-h-[3rem]">
+        <Icon size={24} />
       </div>
-    </Group>
+      <div>
+        <p className="m-0 font-extrabold text-2xl text-neutral-900 dark:text-neutral-100 leading-tight">
+          {number}
+        </p>
+        <p className="m-0 text-sm text-neutral-500 dark:text-neutral-400 font-medium">
+          {text}
+        </p>
+      </div>
+    </div>
   );
 }
 

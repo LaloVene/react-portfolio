@@ -1,5 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+@import "@heroui/styles";
+
+@theme {
+  --font-sans: "Urbanist", sans-serif;
+  --color-brand-primary: #3880ff;
+  --color-brand-secondary: #3dc2ff;
+  --color-brand-tertiary: #5260ff;
+  --color-brand-success: #2dd36f;
+  --color-brand-warning: #ffc409;
+  --color-brand-danger: #eb445a;
+  --color-brand-dark: #222428;
+  --color-brand-medium: #92949c;
+  --color-brand-light: #f4f5f8;
+  --color-brand-bg: #f6f4ef;
+  --color-brand-text: #131313;
+}
+
 :root {
   color-scheme: light;
+  --app-bg-color: #f6f4ef;
+  --app-text-color: #131313;
+  font-family: "Urbanist", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --app-bg-color: #121212;
+    --app-text-color: #ffffff;
+    --app-color-light: #222428;
+    --app-color-dark: #f4f5f8;
+    --app-color-danger: #ff4961;
+  }
 }
 
 html,
@@ -10,8 +42,9 @@ body,
 
 body {
   margin: 0;
-  background: #ffffff;
-  color: #131313;
+  background-color: var(--app-bg-color);
+  color: var(--app-text-color);
+  font-family: "Urbanist", sans-serif;
 }
 
 * {

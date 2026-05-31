@@ -1,14 +1,11 @@
 import React from "react";
-import { Text } from "@mantine/core";
 
 function Logo() {
   return (
-    <Text fw={800} fz="2rem" c="black">
+    <span className="font-extrabold text-3xl text-neutral-900 dark:text-neutral-100 tracking-tight">
       Eduardo Venegas
-      <Text component="span" c="red" fz="3rem" fw={800}>
-        .
-      </Text>
-    </Text>
+      <span className="text-danger font-extrabold text-4xl select-none">.</span>
+    </span>
   );
 }
 

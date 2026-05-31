@@ -1,22 +1,15 @@
-import { Button as MantineButton } from "@mantine/core";
 import React from "react";
+import { Button as HeroButton } from "@heroui/react";
 
 function NavbarButton({ children, onClick }) {
   return (
-    <MantineButton
+    <HeroButton
       onClick={onClick}
       variant="light"
-      color="gray"
-      radius="md"
-      c="black"
-      fz="1rem"
-      fw={700}
-      m={0}
-      bg="rgba(0, 0, 0, 0.08)"
-      shadow="none"
+      className="text-base font-bold text-neutral-900 dark:text-neutral-100 bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all duration-200"
     >
       {children}
-    </MantineButton>
+    </HeroButton>
   );
 }
 

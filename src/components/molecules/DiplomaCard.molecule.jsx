@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge, Box, Text } from "@mantine/core";
+import { Chip } from "@heroui/react";
 import { IconClock } from "@tabler/icons-react";
 import Card from "../atoms/Card.atom.jsx";
 
@@ -10,40 +10,35 @@ function DiplomaCard({ title, date, institution, imageUrl, url }) {
   return (
     <Card
       onClick={goToUrl}
-      style={{ cursor: "pointer", transition: "all 0.2s ease-in-out" }}
+      className="cursor-pointer transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] border border-divider hover:border-brand-primary bg-content1"
     >
-      <Box style={{ display: "flex", alignItems: "center" }}>
+      <div className="flex flex-row items-center gap-4">
         <img
           src={imageUrl}
           alt={title}
-          style={{
-            objectFit: "contain",
-            width: "7rem",
-            height: "5.5rem",
-            borderRadius: "0.5rem",
-            boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
-            backgroundColor: "white",
-          }}
+          className="object-contain w-28 h-22 rounded-lg bg-white shadow-sm border border-neutral-100 p-1 flex-shrink-0"
         />
-        <Box
-          ml="1rem"
-          w="100%"
-          style={{ display: "flex", flexDirection: "column" }}
-        >
-          <Text fw={700} fz="1.3rem" c="black" style={{ minHeight: "3rem" }}>
+        <div className="flex flex-col w-full min-h-[5.5rem] justify-between">
+          <p className="font-bold text-lg text-neutral-900 dark:text-neutral-100 leading-snug line-clamp-2">
             {title}
-          </Text>
-          <Box>
-            <Badge color="dark">{institution}</Badge>
-          </Box>
-          <Box style={{ display: "flex", alignItems: "center" }}>
-            <IconClock size={13} style={{ marginRight: "0.2rem" }} />
-            <Text m={0} fz="0.8rem">
-              {date}
-            </Text>
-          </Box>
-        </Box>
-      </Box>
+          </p>
+          <div className="flex flex-col gap-1.5 mt-2">
+            <div>
+              <Chip
+                size="sm"
+                color="default"
+                className="bg-neutral-800 dark:bg-neutral-200 text-white dark:text-black font-semibold text-xs py-0.5 px-1.5 h-auto rounded"
+              >
+                {institution}
+              </Chip>
+            </div>
+            <div className="flex items-center gap-1 text-neutral-500 dark:text-neutral-400">
+              <IconClock size={14} />
+              <span className="text-xs font-semibold">{date}</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </Card>
   );
 }

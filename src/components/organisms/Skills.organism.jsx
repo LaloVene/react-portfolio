@@ -1,15 +1,14 @@
 import React from "react";
-import { Box } from "@mantine/core";
 import SkillSection from "../molecules/SkillSection.molecule";
 import SkillsData from "../../assets/data/skills.json";
 
 function Skills() {
   return (
-    <Box>
+    <div className="flex flex-col gap-6 px-4">
       <SkillSection title="Languages" skills={SkillsData.languages} />
       <SkillSection title="Lib / Frameworks" skills={SkillsData.frameworks} />
       <SkillSection title="Tools" skills={SkillsData.tools} />
-    </Box>
+    </div>
   );
 }
 

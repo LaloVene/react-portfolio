@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
-import { Group } from "@mantine/core";
 import GlobalContext from "../../utils/state/GlobalContext";
 import NavbarButton from "../atoms/NavbarButton.atom";
 
 const scrollTo = (ref) => {
-  if (ref && ref.current /* + other conditions */) {
+  if (ref && ref.current) {
     ref.current.scrollIntoView({
       behavior: "smooth",
       block: "start",
@@ -34,13 +33,13 @@ const Navbar = () => {
     },
   ];
   return (
-    <Group justify="space-between" w="32rem" visibleFrom="md">
+    <div className="hidden md:flex flex-row justify-between w-[32rem] gap-2">
       {items.map((item) => (
         <NavbarButton onClick={item.onClick} key={item.label}>
           {item.label}
         </NavbarButton>
       ))}
-    </Group>
+    </div>
   );
 };
 

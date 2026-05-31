@@ -1,14 +1,13 @@
 import React from "react";
-import { Box, Flex } from "@mantine/core";
 import Logo from "../atoms/Logo.atom";
 
 function Footer() {
   return (
-    <Box pb="2rem" bg="white">
-      <Flex justify="center" align="center">
+    <footer className="pb-10 pt-8 bg-white dark:bg-neutral-950 border-t border-divider">
+      <div className="flex justify-center items-center">
         <Logo />
-      </Flex>
-    </Box>
+      </div>
+    </footer>
   );
 }
 

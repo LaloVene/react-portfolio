@@ -1,5 +1,4 @@
 import React, { useReducer, useRef, useEffect } from "react";
-import { Box } from "@mantine/core";
 import PageContainer from "../components/templates/PageContainer.template";
 import GlobalContext from "../utils/state/GlobalContext";
 import GlobalReducer, { initialState } from "../utils/state/GlobalReducer";
@@ -31,7 +30,7 @@ const Home = () => {
     <GlobalContext.Provider value={{ state, dispatch }}>
       <PageContainer>
         <Hero />
-        <Box maw={1280} mx="auto">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <Section ref={state.aboutRef} title="About Me">
             <About />
           </Section>
@@ -47,7 +46,7 @@ const Home = () => {
           <Section title="Certificates">
             <Diplomas />
           </Section>
-        </Box>
+        </div>
       </PageContainer>
     </GlobalContext.Provider>
   );

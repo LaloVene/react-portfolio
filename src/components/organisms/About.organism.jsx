@@ -1,5 +1,4 @@
 import React from "react";
-import { Box, Flex, Grid } from "@mantine/core";
 import {
   IconCheck,
   IconEyeglass,
@@ -35,27 +34,25 @@ const accomplishmentList = [
 
 function About() {
   return (
-    <Flex direction="column" align="center" justify="center">
-      <Flex justify="center" gap="1rem">
-        <Box maw="7rem">
+    <div className="flex flex-col items-center justify-center w-full px-4">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full max-w-[45rem]">
+        <div className="w-24 sm:w-28 flex-shrink-0">
           <Avatar />
-        </Box>
+        </div>
         <AboutCard />
-      </Flex>
-      <Box mt="2rem" w="100%" maw="50rem">
-        <Grid>
-          {accomplishmentList.map((item) => (
-            <Grid.Col span={{ base: 6, md: 3 }} key={item.text}>
-              <Accomplishment
-                icon={item.icon}
-                number={item.number}
-                text={item.text}
-              />
-            </Grid.Col>
-          ))}
-        </Grid>
-      </Box>
-    </Flex>
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-[55rem] mt-10">
+        {accomplishmentList.map((item) => (
+          <div key={item.text}>
+            <Accomplishment
+              icon={item.icon}
+              number={item.number}
+              text={item.text}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
 

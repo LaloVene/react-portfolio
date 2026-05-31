@@ -1,37 +1,27 @@
 import React from "react";
-import { Box, Text } from "@mantine/core";
 import Avatar from "../atoms/Avatar.atom";
 import Button from "../atoms/Button.atom";
 import SocialMedia from "./SocialMedia.molecule";
 
 function HeroCard() {
   return (
-    <Box
-      ta="center"
-      c="white"
-      p="1rem"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        backdropFilter: "blur(20px)",
-        borderRadius: "1rem",
-      }}
-    >
-      <Box maw="6rem">
+    <div className="text-center text-white p-8 flex flex-col items-center backdrop-blur-xl bg-black/45 border border-white/15 rounded-2xl shadow-2xl max-w-[24rem] mx-4 transition-all duration-300 hover:scale-[1.02]">
+      <div className="max-w-[7rem] mb-4">
         <Avatar />
-      </Box>
-      <Text fz="2rem" fw={700} m={0} mt="1rem" c="white">
+      </div>
+      <h1 className="text-3xl font-extrabold m-0 text-white tracking-tight">
         Eduardo Venegas
-      </Text>
-      <Text fz="1rem" m={0} mt="0.5rem" c="gray.4">
+      </h1>
+      <p className="text-base m-0 mt-2 text-neutral-300 font-semibold uppercase tracking-wider">
         Data Engineer
-      </Text>
+      </p>
       <SocialMedia />
-      <Button color="red" href="mailto:lalohdez77@gmail.com">
-        Contact Me
-      </Button>
-    </Box>
+      <div className="mt-2">
+        <Button color="red" href="mailto:lalohdez77@gmail.com">
+          Contact Me
+        </Button>
+      </div>
+    </div>
   );
 }
 

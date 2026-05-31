@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Box, Group } from "@mantine/core";
 import GlobalContext from "../../utils/state/GlobalContext";
 import Logo from "../atoms/Logo.atom";
 import Navbar from "../molecules/Navbar.organism";
@@ -8,16 +7,15 @@ function Header() {
   const { state } = useContext(GlobalContext);
 
   return (
-    <Box pos="sticky" top={0} style={{ zIndex: 10 }}>
-      <Box>
-        <Box ref={state.homeRef} pt="1rem" px="2rem" bg="white">
-          <Group justify="space-between" align="center" maw={1770} mx="auto">
-            <Logo />
-            <Navbar />
-          </Group>
-        </Box>
-      </Box>
-    </Box>
+    <header
+      ref={state.homeRef}
+      className="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-neutral-950/80 border-b border-divider/40 transition-all duration-200"
+    >
+      <div className="max-w-[1770px] mx-auto py-4 px-6 flex flex-row justify-between items-center">
+        <Logo />
+        <Navbar />
+      </div>
+    </header>
   );
 }
 

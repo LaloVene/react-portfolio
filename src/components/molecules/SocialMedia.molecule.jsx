@@ -1,5 +1,5 @@
 import React from "react";
-import { ActionIcon, Box } from "@mantine/core";
+import { Button } from "@heroui/react";
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 
 const socialMedia = [
@@ -15,30 +15,30 @@ const socialMedia = [
   },
 ];
 
-function HeroCard() {
+function SocialMedia() {
   return (
-    <Box my="1.5rem">
-      {socialMedia.map((icon) => (
+    <div className="my-6 flex flex-row gap-4 justify-center">
+      {socialMedia.map((social) => (
         <a
-          href={icon.url}
+          href={social.url}
           target="_blank"
           rel="noopener noreferrer"
-          key={icon.name}
+          key={social.name}
+          aria-label={social.name}
+          className="transition-transform duration-200 hover:scale-110 active:scale-95"
         >
-          <ActionIcon
-            variant="subtle"
-            color="gray"
-            size="lg"
-            aria-label={icon.name}
-            mx="0.5rem"
-            c="hsl(0, 0%, 80%)"
+          <Button
+            isIconOnly
+            variant="light"
+            size="md"
+            className="text-neutral-400 hover:text-white dark:text-neutral-500 dark:hover:text-white bg-transparent hover:bg-white/10 rounded-full border border-transparent hover:border-white/20 p-2"
           >
-            <icon.icon size={22} />
-          </ActionIcon>
+            <social.icon size={24} />
+          </Button>
         </a>
       ))}
-    </Box>
+    </div>
   );
 }
 
-export default HeroCard;
+export default SocialMedia;

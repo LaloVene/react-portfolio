@@ -1,19 +1,16 @@
 import React from "react";
-import { Box } from "@mantine/core";
 import Header from "../organisms/Header.organism";
 import Footer from "../organisms/Footer.organism";
 
 function PageContainer({ children }) {
   return (
-    <Box>
-      <Box>
-        <Header />
-        <Box maw={1800} mx="auto" p="1rem">
-          {children}
-        </Box>
-        <Footer />
-      </Box>
-    </Box>
+    <div className="min-h-screen bg-brand-bg dark:bg-neutral-900 transition-colors duration-200">
+      <Header />
+      <main className="max-w-[1800px] mx-auto p-4 sm:p-6 lg:p-8">
+        {children}
+      </main>
+      <Footer />
+    </div>
   );
 }
 

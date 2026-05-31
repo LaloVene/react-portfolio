@@ -1,24 +1,16 @@
 import React from "react";
-import { Text, Title } from "@mantine/core";
 
 function SectionTitle({ children }) {
   return (
-    <Title order={2} ml="1rem" mt="3rem" fz="2.5rem" fw={900} pos="relative">
+    <h2 className="relative ml-4 mt-12 text-4xl sm:text-5xl font-black text-neutral-900 dark:text-neutral-100 tracking-tight z-10">
       {children}
-      <Text
-        component="span"
+      <span
         aria-hidden="true"
-        pos="absolute"
-        top="-2rem"
-        left="-1rem"
-        fz="4rem"
-        fw={900}
-        c="hsl(0, 0%, 90%)"
-        style={{ zIndex: -1 }}
+        className="absolute -top-8 -left-4 text-6xl sm:text-7xl font-black text-neutral-200/50 dark:text-neutral-800/40 select-none z-[-1] pointer-events-none"
       >
         {children}
-      </Text>
-    </Title>
+      </span>
+    </h2>
   );
 }
 
