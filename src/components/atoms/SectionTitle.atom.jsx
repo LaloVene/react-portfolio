@@ -9,7 +9,7 @@ function SectionTitle({ children }) {
         component="span"
         aria-hidden="true"
         pos="absolute"
-        top="-6rem"
+        top="-2rem"
         left="-1rem"
         fz="4rem"
         fw={900}
