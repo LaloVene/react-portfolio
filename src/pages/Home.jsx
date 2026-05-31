@@ -30,7 +30,7 @@ const Home = () => {
     <GlobalContext.Provider value={{ state, dispatch }}>
       <PageContainer>
         <Hero />
-        <div className="max-w-[1600px] mx-auto">
+        <div className="max-w-[1320px] mx-auto">
           <Section ref={state.aboutRef} title="About Me">
             <About />
           </Section>

@@ -11,7 +11,7 @@ function Header() {
       ref={state.homeRef}
       className="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-neutral-950/80 transition-all duration-200"
     >
-      <div className="max-w-[2300px] mx-auto py-4 px-6 flex flex-row justify-between items-center">
+      <div className="max-w-[1800px] mx-auto py-4 px-4 flex flex-row justify-between items-center">
         <Logo />
         <Navbar />
       </div>

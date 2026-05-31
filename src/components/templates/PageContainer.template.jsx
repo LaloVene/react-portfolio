@@ -6,9 +6,7 @@ function PageContainer({ children }) {
   return (
     <div className="min-h-screen bg-brand-bg dark:bg-neutral-900 transition-colors duration-200">
       <Header />
-      <main className="max-w-[2300px] mx-auto px-4 sm:px-6 lg:px-8">
-        {children}
-      </main>
+      <main className="max-w-[1800px] mx-auto px-4">{children}</main>
       <Footer />
     </div>
   );
