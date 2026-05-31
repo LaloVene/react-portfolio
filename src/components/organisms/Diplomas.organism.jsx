@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@mantine/core";
-import DiplomaData from "../../../assets/data/diplomas.json";
-import DiplomaSection from "../../molecules/DiplomaSection/DiplomaSection.molecule";
+import DiplomaData from "../../assets/data/diplomas.json";
+import DiplomaSection from "../molecules/DiplomaSection.molecule";
 
 function Diplomas() {
   return (

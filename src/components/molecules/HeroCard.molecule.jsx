@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Text } from "@mantine/core";
-import Avatar from "../../atoms/Avatar/Avatar.atom";
-import Button from "../../atoms/Button/Button.atom";
-import SocialMedia from "../SocialMedia/SocialMedia.molecule";
+import Avatar from "../atoms/Avatar.atom";
+import Button from "../atoms/Button.atom";
+import SocialMedia from "./SocialMedia.molecule";
 
 function HeroCard() {
   return (

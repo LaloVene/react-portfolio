@@ -1,7 +1,7 @@
 import React from "react";
 import { Badge, Box, Text } from "@mantine/core";
 import { IconClock } from "@tabler/icons-react";
-import Card from "../../atoms/Card/Card.atom.jsx";
+import Card from "../atoms/Card.atom.jsx";
 
 function DiplomaCard({ title, date, institution, imageUrl, url }) {
   const goToUrl = () => {

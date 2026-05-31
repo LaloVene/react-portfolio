@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Card, Text } from "@mantine/core";
-import BackgroundSection from "../../molecules/BackgroundSection/BackgroundSection.molecule";
+import BackgroundSection from "./BackgroundSection.molecule";
 
 function BackgroundCard({ type, data }) {
   return (

@@ -3,13 +3,13 @@ import { Box } from "@mantine/core";
 import PageContainer from "../components/templates/PageContainer.template";
 import GlobalContext from "../utils/state/GlobalContext";
 import GlobalReducer, { initialState } from "../utils/state/GlobalReducer";
-import Hero from "../components/organisms/Hero/Hero.organism";
-import Section from "../components/molecules/Section/Section.molecule";
-import About from "../components/organisms/About/About.organism";
-import Background from "../components/organisms/Background/Background.organism";
-import Projects from "../components/organisms/Projects/Projects.organism";
-import Diplomas from "../components/organisms/Diplomas/Diplomas.organism";
-import Skills from "../components/organisms/Skills/Skills.organism";
+import Hero from "../components/organisms/Hero.organism";
+import Section from "../components/molecules/Section.molecule";
+import About from "../components/organisms/About.organism";
+import Background from "../components/organisms/Background.organism";
+import Projects from "../components/organisms/Projects.organism";
+import Diplomas from "../components/organisms/Diplomas.organism";
+import Skills from "../components/organisms/Skills.organism";
 
 const Home = () => {
   const [state, dispatch] = useReducer(GlobalReducer, initialState);

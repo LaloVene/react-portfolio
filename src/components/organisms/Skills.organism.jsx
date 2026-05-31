@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@mantine/core";
-import SkillSection from "../../molecules/SkillSection/SkillSection.molecule";
-import SkillsData from "../../../assets/data/skills.json";
+import SkillSection from "../molecules/SkillSection.molecule";
+import SkillsData from "../../assets/data/skills.json";
 
 function Skills() {
   return (

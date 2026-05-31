@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Box, Group } from "@mantine/core";
-import GlobalContext from "../../../utils/state/GlobalContext";
-import Logo from "../../atoms/Logo/Logo.atom";
-import Navbar from "../../molecules/Navbar/Navbar.organism";
+import GlobalContext from "../../utils/state/GlobalContext";
+import Logo from "../atoms/Logo.atom";
+import Navbar from "../molecules/Navbar.organism";
 
 function Header() {
   const { state } = useContext(GlobalContext);

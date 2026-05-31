@@ -6,9 +6,9 @@ import {
   IconMedal,
   IconTrophy,
 } from "@tabler/icons-react";
-import Avatar from "../../atoms/Avatar/Avatar.atom";
-import AboutCard from "../../molecules/AboutCard/AboutCard";
-import Accomplishment from "../../atoms/Accomplishment/Accomplishment.atom";
+import Avatar from "../atoms/Avatar.atom";
+import AboutCard from "../molecules/AboutCard";
+import Accomplishment from "../atoms/Accomplishment.atom";
 
 const accomplishmentList = [
   {

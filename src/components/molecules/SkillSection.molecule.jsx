@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, SimpleGrid, Text } from "@mantine/core";
-import SkillItem from "../SkillItem/SkillItem.molecule";
+import SkillItem from "./SkillItem.molecule";
 
 function SkillSection({ title, skills = [] }) {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@mantine/core";
-import Header from "../organisms/Header/Header.organism";
-import Footer from "../organisms/Footer/Footer.organism";
+import Header from "../organisms/Header.organism";
+import Footer from "../organisms/Footer.organism";
 
 function PageContainer({ children }) {
   return (

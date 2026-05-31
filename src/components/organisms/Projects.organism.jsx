@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Grid } from "@mantine/core";
-import ProjectCard from "../../molecules/ProjectCard/ProjectCard";
-import ProjectData from "../../../assets/data/projects.json";
+import ProjectCard from "../molecules/ProjectCard";
+import ProjectData from "../../assets/data/projects.json";
 
 function Projects() {
   return (

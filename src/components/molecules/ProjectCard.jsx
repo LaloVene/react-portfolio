@@ -1,8 +1,8 @@
 import React from "react";
 import { Badge, Box, Text } from "@mantine/core";
 import { IconTrophy } from "@tabler/icons-react";
-import Card from "../../atoms/Card/Card.atom";
-import Button from "../../atoms/Button/Button.atom";
+import Card from "../atoms/Card.atom";
+import Button from "../atoms/Button.atom";
 
 function ProjectCard({
   imageUrl,

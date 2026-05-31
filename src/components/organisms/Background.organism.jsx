@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@mantine/core";
-import BackgroundCard from "../../molecules/BackgroundCard/BackgroundCard.molecule";
-import Data from "../../../assets/data/background.json";
+import BackgroundCard from "../molecules/BackgroundCard.molecule";
+import Data from "../../assets/data/background.json";
 
 function Background() {
   return (

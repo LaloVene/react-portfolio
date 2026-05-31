@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Group } from "@mantine/core";
-import GlobalContext from "../../../utils/state/GlobalContext";
-import NavbarButton from "../../atoms/NavbarButton/NavbarButton.atom";
+import GlobalContext from "../../utils/state/GlobalContext";
+import NavbarButton from "../atoms/NavbarButton.atom";
 
 const scrollTo = (ref) => {
   if (ref && ref.current /* + other conditions */) {

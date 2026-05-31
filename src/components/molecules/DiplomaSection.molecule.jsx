@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Grid, Text } from "@mantine/core";
-import DiplomaCard from "../../molecules/DiplomaCard/DiplomaCard.molecule";
+import DiplomaCard from "../molecules/DiplomaCard.molecule";
 
 function DiplomaSection({ title, diplomaData }) {
   return (

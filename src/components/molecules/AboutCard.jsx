@@ -1,7 +1,7 @@
 import { Box, Card, Text } from "@mantine/core";
 import React from "react";
-import Button from "../../atoms/Button/Button.atom";
-import Pdf from "../../../assets/Resume.pdf";
+import Button from "../atoms/Button.atom";
+import Pdf from "../../assets/Resume.pdf";
 
 function AboutCard() {
   return (

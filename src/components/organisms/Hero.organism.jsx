@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Text } from "@mantine/core";
 import { IconChevronDown } from "@tabler/icons-react";
-import HeroCard from "../../molecules/HeroCard/HeroCard.molecule";
-import BackgroundImage from "../../../assets/hero-background3.jpeg";
+import HeroCard from "../molecules/HeroCard.molecule";
+import BackgroundImage from "../../assets/hero-background3.jpeg";
 
 function Hero() {
   return (

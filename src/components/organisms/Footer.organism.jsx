@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex } from "@mantine/core";
-import Logo from "../../atoms/Logo/Logo.atom";
+import Logo from "../atoms/Logo.atom";
 
 function Footer() {
   return (
