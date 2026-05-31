@@ -1,16 +1,22 @@
 {
   "work": [
     {
+      "title": "Data Scientist Masterarbeit",
+      "location": "BMW Group & DFKI & Saarland University",
+      "time": "March 2026 - September 2026",
+      "description": "**Topic**: *Evaluating Multi-Turn Tool-Using Agentic RAG Systems: A Synthetic Benchmark Generation Approach*. Architected a modular evaluation framework for **tool-using Agentic RAG systems** to enable fine-grained failure localization. Built a **multi-turn synthetic benchmark** that combines deterministic **task planning** with diverse user **personas**. Engineered an **unsupervised retrieval engine** to audit a **RAG system** over **4M unannotated** corporate records."
+    },
+    {
       "title": "Data Scientist Werkstudent",
       "location": "August-Wilhelm Scheer Institute",
-      "time": "October 2024 - Present",
-      "description": "Designed and implemented a **RAG** system with **LangChain** and **HuggingFace**, incorporating advanced **Information Retrieval** methods to boost the precision and recall of data retrieval. Enhanced autoencoder model performance through the application of **Federated Learning**, enabling distributed training across different devices. Created a robust entity matching solution capable of aligning disparate data types, powered by **Llama Instruct** and presented via an interactive **Streamlit** dashboard."
+      "time": "October 2024 - February 2026",
+      "description": "Developed a **KG-RAG** over unstructured technical documentation and a **Planning Agent**, using **LangChain** and **HuggingFace**. Implemented an **Autoencoder** model for **Anomaly Detection via Federated Learning** across edge devices. Developed a **Digital Twin** system using **PLCs**, **MQTT** and **Node-red**. Built an **MCP** bridge to connect natural language queries to a live database via an agent."
     },
     {
       "title": "Cloud Software Engineer",
       "location": "Oracle",
       "time": "November 2023 - October 2024",
-      "description": "Worked on the **Oracle Cloud Infrastructure** in the team of Big **Data Service** in **Oracle Analytics**. Developed the console for managing and deploying **big data clusters**.  Designing, implementing, and maintaining scalable and efficient solutions on OCI."
+      "description": "Worked on the **Oracle Cloud Infrastructure** in the team of Big **Data Service** in **Oracle Analytics**. Developed tools for managing and deploying **big data clusters**.  Developed several Pipelines for workflow automation and testing, reducing manual efforts and increasing testing coverage."
     },
     {
       "title": "Data Analyst Intern",
@@ -19,7 +25,7 @@
       "description": "Developed a high-accuracy **algorithm** for **detecting external battery replacements**. Resolved the issue of **missing database values** and implemented a **pipeline** to forward fill the gaps, **boosting service demand by 62%**. Designed a **Streamlit dashboard** to adjust prediction model parameters and obtain **real-time output** (**<8 seconds**) Configured **cloud-based environments** for working with **PySpark**. Applied various **visualization and data analytics** techniques to gain insights from **diverse data sources**. Identified **data patterns** in failing vehicle components and leveraged this information to **perform recalls only the impacted vehicles**."
     },
     {
-      "title": "Site Reliability Engineer & Developer",
+      "title": "Site Reliability Engineer",
       "location": "Xira",
       "time": "January 2022 - April 2022",
       "description": "**Maintained** over 10 servers, **monitored** services and **enhanced** engineering processes. Built a **platform** to manage client **APIs** with payments and a subscription system using **NextJS**, **Stripe** and **Docker**. Maintained a **text analytics** model for message categorization, benefiting clients."
@@ -48,19 +54,19 @@
       "title": "MSc. Data Science and Artificial Intelligence",
       "location": "Universität des Saarlandes",
       "time": "October 2024 - September 2026",
-      "description": "Coursing Master degree. **Key Courses:** _Machine Learning, Neural Networks, Quantum AI, Natural Language Processing, Machine Translation, Computer Vision, Image Processing_."
+      "description": "Coursing degree. **Key Coursework:** _Statistics | Deep Learning | NLP | Machine Translation | Image Processing | Computer Vision_. **Master Thesis:** BMW Group & DFKI"
     },
     {
       "title": "BSc. Computer Science",
       "location": "Tecnológico de Monterrey",
       "time": "August 2019 - December 2023",
-      "description": "Grade: 94.6 / 100. Five times best software engineering GPA. **60% tuition** scholarship due to academic merit. Strong foundation in mathematical modelling, statistical methods, and computational techniques."
+      "description": "Grade: 94.6 / 100. Five times best software engineering GPA. **60% tuition** scholarship due to academic merit. **Key Coursework:** _ML | Time series | Algoriths & Optimization | Cloud Computing & Distributed | Automation & PLC | Vehicle User Interfaces_"
     },
     {
       "title": "Computer Science Exchange Student",
       "location": "Universität Ulm",
       "time": "October 2022 - September 2023",
-      "description": "**Full scholarship** recipient from **DAAD**. _Computer Vision II | Autonomous Driving and Assistance Systems | Statistics_"
+      "description": "**Full scholarship** recipient from **DAAD**. **Key Coursework:** _Computer Vision II | Autonomous Driving and Assistance Systems | Statistics_"
     },
     {
       "title": "Technologist in Automation and Robotics",

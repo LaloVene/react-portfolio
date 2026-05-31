@@ -7,9 +7,12 @@ import Pdf from "../../../assets/Resume.pdf";
 const Card = styled(IonCard)`
   border-radius: 1rem;
   max-width: 35rem;
-  box-shadow: 0 0.3px 2.2px rgba(0, 0, 0, 0.02),
-    0 0.8px 5.3px rgba(0, 0, 0, 0.028), 0 1.5px 10px rgba(0, 0, 0, 0.035),
-    0 2.7px 17.9px rgba(0, 0, 0, 0.042), 0 5px 33.4px rgba(0, 0, 0, 0.05),
+  box-shadow:
+    0 0.3px 2.2px rgba(0, 0, 0, 0.02),
+    0 0.8px 5.3px rgba(0, 0, 0, 0.028),
+    0 1.5px 10px rgba(0, 0, 0, 0.035),
+    0 2.7px 17.9px rgba(0, 0, 0, 0.042),
+    0 5px 33.4px rgba(0, 0, 0, 0.05),
     0 12px 80px rgba(0, 0, 0, 0.07);
 `;
 const Text = styled.p``;
@@ -22,10 +25,8 @@ function AboutCard() {
     <Card>
       <IonCardContent>
         <Text>
-          My name is Eduardo Venegas, I am a Computer Science Engineer graduated from the
-          University Tec de Monterrey. I have experience in the fields of{" "}
-          <b>Web Development</b>, <b>Data Engineering</b>, <b>DevOps</b>,{" "}
-          <b>Site Reliability</b> and <b>Cloud</b>.
+          I am a Data Engineer and AI Researcher specializing in advanced data
+          retrieval pipelines and autonomous AI orchestration.
         </Text>
         <DownloadButton
           href={Pdf}

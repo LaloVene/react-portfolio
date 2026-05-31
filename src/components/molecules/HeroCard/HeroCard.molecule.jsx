@@ -37,7 +37,7 @@ function HeroCard() {
         <Avatar />
       </AvatarContainer>
       <Name>Eduardo Venegas</Name>
-      <Description>Computer Science Engineer</Description>
+      <Description>Data Engineer</Description>
       <SocialMedia />
       <Button color="danger" href="mailto:lalohdez77@gmail.com">
         Contact Me

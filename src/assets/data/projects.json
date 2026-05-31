@@ -1,5 +1,14 @@
 [
   {
+    "title": "Daten-Mapping-Framework für die AAS",
+    "name": "Daten-Mapping-Framework für die AAS",
+    "description": "Developed a mapping framework from schemas to Asset Administration Shell to achieve interoperability in Industry 4.0. Designed a dual alignment strategy separating standard relational tables from hierarchical assets.",
+    "imageUrl": "https://ojs.di-verlag.de/public/journals/1/cover_issue_669_de_DE.jpg",
+    "githubUrl": "https://ojs.di-verlag.de/index.php/atp_edition/article/view/2836",
+    "url": "",
+    "tags": ["Data Mapping", "Digital Twin", "Large Language Model"]
+  },
+  {
     "title": "Platform to help developers find teammates for side projects.",
     "name": "DevUp",
     "description": "Ever wanted to work on a project with others but don't know where to get started? Introducing DevUp - a platform to help developers find teammates for side projects.\n Developers can search for projects that they are interested in, and contact the current team members of the project to learn more about them and join their team. Developers that already have an project idea can make a post on DevUp to display it to other project-seeking developers and find new team members.",
