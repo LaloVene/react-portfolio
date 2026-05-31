@@ -9,8 +9,8 @@ function BackgroundSection({ type, time, title, description, location, isLast })
   return (
     <div className="flex flex-col">
       <div className="flex flex-row items-center gap-3">
-        <div className="text-neutral-700 dark:text-neutral-300">
-          <Icon size={24} />
+        <div className="text-brand-danger dark:text-neutral-300">
+          <Icon size={32} />
         </div>
         <span className="text-sm font-semibold text-neutral-500 dark:text-neutral-400">
           {time}

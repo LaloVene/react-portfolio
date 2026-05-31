@@ -17,7 +17,7 @@ function HeroCard() {
       </p>
       <SocialMedia />
       <div className="mt-2">
-        <Button color="red" href="mailto:lalohdez77@gmail.com">
+        <Button color="danger" href="mailto:lalohdez77@gmail.com">
           Contact Me
         </Button>
       </div>

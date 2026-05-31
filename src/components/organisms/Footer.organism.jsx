@@ -3,7 +3,7 @@ import Logo from "../atoms/Logo.atom";
 
 function Footer() {
   return (
-    <footer className="pb-10 pt-8 bg-white dark:bg-neutral-950 border-t border-divider">
+    <footer className="pb-10 pt-8 bg-white dark:bg-neutral-950">
       <div className="flex justify-center items-center">
         <Logo />
       </div>

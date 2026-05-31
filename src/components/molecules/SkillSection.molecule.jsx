@@ -3,7 +3,7 @@ import SkillItem from "./SkillItem.molecule";
 
 function SkillSection({ title, skills = [] }) {
   return (
-    <div className="ml-2 sm:ml-4 mt-8">
+    <div className="ml-2 sm:ml-4 mt-2">
       <p className="text-xl font-extrabold text-neutral-800 dark:text-neutral-200 mb-4 tracking-tight">
         {title}
       </p>

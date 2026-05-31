@@ -4,7 +4,7 @@ import BackgroundSection from "./BackgroundSection.molecule";
 
 function BackgroundCard({ type, data }) {
   return (
-    <Card className="p-4 rounded-xl border border-divider bg-content1 shadow-md hover:shadow-lg transition-shadow duration-300">
+    <Card className="p-4 shadow-none">
       <div className="text-3xl font-bold uppercase text-neutral-300 dark:text-neutral-600 text-center py-4 tracking-[0.5rem] select-none">
         {type}
       </div>

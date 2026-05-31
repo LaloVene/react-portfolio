@@ -10,7 +10,7 @@ function DiplomaCard({ title, date, institution, imageUrl, url }) {
   return (
     <Card
       onClick={goToUrl}
-      className="cursor-pointer transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] border border-divider hover:border-brand-primary bg-content1"
+      className="cursor-pointer transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] hover:border-brand-primary bg-content1  shadow-[0_0.3px_2.2px_rgba(0,0,0,0.02),0_0.8px_5.3px_rgba(0,0,0,0.028),0_1.5px_10px_rgba(0,0,0,0.035),0_2.7px_17.9px_rgba(0,0,0,0.042),0_5px_33.4px_rgba(0,0,0,0.05),0_12px_80px_rgba(0,0,0,0.07)] h-full"
     >
       <div className="flex flex-row items-center gap-4">
         <img

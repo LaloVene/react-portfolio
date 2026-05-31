@@ -9,9 +9,9 @@ function Header() {
   return (
     <header
       ref={state.homeRef}
-      className="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-neutral-950/80 border-b border-divider/40 transition-all duration-200"
+      className="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-neutral-950/80 transition-all duration-200"
     >
-      <div className="max-w-[1770px] mx-auto py-4 px-6 flex flex-row justify-between items-center">
+      <div className="max-w-[2300px] mx-auto py-4 px-6 flex flex-row justify-between items-center">
         <Logo />
         <Navbar />
       </div>

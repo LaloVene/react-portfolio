@@ -23,8 +23,8 @@
     "vite": "^7.2.4"
   },
   "scripts": {
-    "dev": "deno run -A npm:vite --host 0.0.0.0",
-    "build": "deno run -A npm:vite build",
-    "preview": "deno run -A npm:vite preview --host 0.0.0.0"
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
   }
 }

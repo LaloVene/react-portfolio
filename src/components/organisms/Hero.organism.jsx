@@ -1,14 +1,14 @@
 import React from "react";
 import { IconChevronDown } from "@tabler/icons-react";
 import HeroCard from "../molecules/HeroCard.molecule";
-import BackgroundImage from "../../assets/hero-background3.jpeg";
+import BackgroundImage from "../../assets/hero-background.jpeg";
 
 function Hero() {
   return (
     <section
-      className="relative w-full h-[70vh] flex flex-col justify-center items-center rounded-2xl shadow-xl overflow-hidden mt-4"
+      className="relative w-full h-[70vh] flex flex-col justify-center items-center rounded-2xl shadow-xl overflow-hidden"
       style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(${BackgroundImage})`,
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)), url(${BackgroundImage})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",

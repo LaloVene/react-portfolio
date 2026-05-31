@@ -6,7 +6,7 @@ function SectionTitle({ children }) {
       {children}
       <span
         aria-hidden="true"
-        className="absolute -top-8 -left-4 text-6xl sm:text-7xl font-black text-neutral-200/50 dark:text-neutral-800/40 select-none z-[-1] pointer-events-none"
+        className="absolute -top-8 -left-4 text-6xl sm:text-7xl font-black text-neutral-200/100 dark:text-neutral-800/40 select-none z-[-1] pointer-events-none"
       >
         {children}
       </span>

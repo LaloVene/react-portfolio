@@ -1,4 +1,38 @@
 {
+  "frameworks": [
+    {
+      "name": "HuggingFace",
+      "logo": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+    },
+    {
+      "name": "LangChain",
+      "logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fregistry.npmmirror.com%2F%40lobehub%2Ficons-static-png%2Flatest%2Ffiles%2Fdark%2Flangchain-color.png&f=1&nofb=1&ipt=4b1f2f57e957028358b5301abff4134fa8a4afd8c3e0d5834bcc8e5ce44334f5"
+    },
+    {
+      "name": "TensorFlow",
+      "logo": "https://user-images.githubusercontent.com/54692916/131591295-7d2c1dd4-6a16-4a56-bf45-800dd5e60a4d.png"
+    },
+    {
+      "name": "React",
+      "logo": "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
+    },
+    {
+      "name": "Angular",
+      "logo": "https://user-images.githubusercontent.com/54692916/131589640-86a6a9ac-e938-4771-a1a9-bae544c938c9.png"
+    },
+    {
+      "name": "Flask",
+      "logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.clipartkey.com%2Fmpngs%2Fm%2F145-1450071_flask-python-logo-transparent.png&f=1&nofb=1&ipt=dfa6026336c1c72bbac53c271af9a894c4a01b26cb4ddf41c8119bd3c700fea4"
+    },
+    {
+      "name": "Node JS",
+      "logo": "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"
+    },
+    {
+      "name": "Jest",
+      "logo": "https://user-images.githubusercontent.com/54692916/131591143-c39e9841-b9f7-49b8-b878-b14b96ee7beb.png"
+    }
+  ],
   "languages": [
     {
       "name": "Python",
@@ -27,44 +61,6 @@
     {
       "name": "MatLab",
       "logo": "https://user-images.githubusercontent.com/54692916/131589590-2d33315f-24aa-4828-adb9-a48b36a505b1.png"
-    }
-  ],
-  "frameworks": [
-    {
-      "name": "HuggingFace",
-      "logo": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
-    },
-    {
-      "name": "LangChain",
-      "logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fregistry.npmmirror.com%2F%40lobehub%2Ficons-static-png%2Flatest%2Ffiles%2Fdark%2Flangchain-color.png&f=1&nofb=1&ipt=4b1f2f57e957028358b5301abff4134fa8a4afd8c3e0d5834bcc8e5ce44334f5"
-    },
-    {
-      "name": "TensorFlow",
-      "logo": "https://user-images.githubusercontent.com/54692916/131591295-7d2c1dd4-6a16-4a56-bf45-800dd5e60a4d.png"
-    },
-    {
-      "name": "React",
-      "logo": "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
-    },
-    {
-      "name": "Angular",
-      "logo": "https://user-images.githubusercontent.com/54692916/131589640-86a6a9ac-e938-4771-a1a9-bae544c938c9.png"
-    },
-    {
-      "name": "Capacitor / Tauri",
-      "logo": "https://user-images.githubusercontent.com/54692916/131591386-c6ddef5e-cf67-4eaf-bdb2-1f059f4983ed.png"
-    },
-    {
-      "name": "Flask",
-      "logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.clipartkey.com%2Fmpngs%2Fm%2F145-1450071_flask-python-logo-transparent.png&f=1&nofb=1&ipt=dfa6026336c1c72bbac53c271af9a894c4a01b26cb4ddf41c8119bd3c700fea4"
-    },
-    {
-      "name": "Node JS",
-      "logo": "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"
-    },
-    {
-      "name": "Jest",
-      "logo": "https://user-images.githubusercontent.com/54692916/131591143-c39e9841-b9f7-49b8-b878-b14b96ee7beb.png"
     }
   ],
   "tools": [
