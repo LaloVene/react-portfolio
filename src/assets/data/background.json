@@ -2,7 +2,7 @@
   "work": [
     {
       "title": "Data Scientist Masterarbeit",
-      "location": "BMW Group & DFKI & Saarland University",
+      "location": "BMW & Deutsches Forschungszentrum für Künstliche Intelligenz (DFKI)",
       "time": "March 2026 - September 2026",
       "description": "**Topic**: *Evaluating Multi-Turn Tool-Using Agentic RAG Systems: A Synthetic Benchmark Generation Approach*. Architected a modular evaluation framework for **tool-using Agentic RAG systems** to enable fine-grained failure localization. Built a **multi-turn synthetic benchmark** that combines deterministic **task planning** with diverse user **personas**. Engineered an **unsupervised retrieval engine** to audit a **RAG system** over **4M unannotated** corporate records."
     },
@@ -20,7 +20,7 @@
     },
     {
       "title": "Data Analyst Intern",
-      "location": "BMW Group",
+      "location": "BMW",
       "time": "March 2023 - September 2023",
       "description": "Developed a high-accuracy **algorithm** for **detecting external battery replacements**. Resolved the issue of **missing database values** and implemented a **pipeline** to forward fill the gaps, **boosting service demand by 62%**. Designed a **Streamlit dashboard** to adjust prediction model parameters and obtain **real-time output** (**<8 seconds**) Configured **cloud-based environments** for working with **PySpark**. Applied various **visualization and data analytics** techniques to gain insights from **diverse data sources**. Identified **data patterns** in failing vehicle components and leveraged this information to **perform recalls only the impacted vehicles**."
     },
@@ -54,7 +54,7 @@
       "title": "MSc. Data Science and Artificial Intelligence",
       "location": "Universität des Saarlandes",
       "time": "October 2024 - September 2026",
-      "description": "Coursing degree. **Key Coursework:** _Statistics | Deep Learning | NLP | Machine Translation | Image Processing | Computer Vision_. **Master Thesis:** BMW Group & DFKI"
+      "description": "Coursing degree. **Key Coursework:** _Statistics | ML Cybersecurity | NLP | Machine Translation | Image Processing & Computer Vision_. **Master Thesis (Grade 1.0):** Evaluating Multi-Turn Agentic RAG Systems (In collaboration with BMW & DFKI)."
     },
     {
       "title": "BSc. Computer Science",

@@ -13,7 +13,7 @@ function HeroCard() {
         Eduardo Venegas
       </h1>
       <p className="text-base m-0 mt-2 text-neutral-300 font-semibold uppercase tracking-wider">
-        Data Engineer
+        Data & AI Engineer
       </p>
       <SocialMedia />
       <div className="mt-2">
