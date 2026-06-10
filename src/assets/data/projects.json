@@ -2,6 +2,21 @@
   {
     "title": "Daten-Mapping-Framework für die AAS",
     "name": "Daten-Mapping-Framework für die AAS",
+    "description": "Built a **PyTorch** pipeline using **nuScenes***, **ResNet** and **depth lifting** to map multi-camera feeds into a **Bird's-Eye-View** grid. Designed a **temporal motion planning head** with **drivable-area and occupancy decoders** to generate safe paths.",
+    "imageUrl": "https://github.com/LaloVene/vectordrive-route/blob/main/checkpoints/stages/stage7_trajectories.png?raw=true",
+    "githubUrl": "https://github.com/LaloVene/vectordrive-route",
+    "url": "",
+    "tags": [
+      "PyTorch",
+      "Styled Components",
+      "ResNet",
+      "nuScenes",
+      "Motion Planning"
+    ]
+  },
+  {
+    "title": "Daten-Mapping-Framework für die AAS",
+    "name": "Daten-Mapping-Framework für die AAS",
     "description": "Developed a mapping framework from schemas to Asset Administration Shell to achieve interoperability in Industry 4.0. Designed a dual alignment strategy separating standard relational tables from hierarchical assets.",
     "imageUrl": "https://ojs.di-verlag.de/public/journals/1/cover_issue_669_de_DE.jpg",
     "githubUrl": "https://ojs.di-verlag.de/index.php/atp_edition/article/view/2836",
