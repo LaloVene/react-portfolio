@@ -13,7 +13,7 @@
       "description": "Developed a **KG-RAG** over unstructured technical documentation and a **Planning Agent**, using **LangChain** and **HuggingFace**. Implemented an **Autoencoder** model for **Anomaly Detection via Federated Learning** across edge devices. Developed a **Digital Twin** system using **PLCs**, **MQTT** and **Node-red**. Built an **MCP** bridge to connect natural language queries to a live database via an agent."
     },
     {
-      "title": "Cloud Software Engineer",
+      "title": "Big Data Platform Engineer",
       "location": "Oracle",
       "time": "November 2023 - October 2024",
       "description": "Worked on the **Oracle Cloud Infrastructure** in the team of Big **Data Service** in **Oracle Analytics**. Developed tools for managing and deploying **big data clusters**.  Developed several Pipelines for workflow automation and testing, reducing manual efforts and increasing testing coverage."
