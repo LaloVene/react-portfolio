@@ -37,13 +37,13 @@
       "description": "Selected internationally among 120 out of 20,000 applicants. Automated end-to-end **CI/CD workflows** using **GitHub Actions** for efficient, containerized deployment to production environments. Implemented system-wide metric monitoring dashboards using **cAdvisor**, **Prometheus**, and **Grafana** to ensure **99.99% uptime** hosted on an **AWS EC2** instance."
     },
     {
-      "title": "Data Engineer",
+      "title": "Machine Learning Engineer",
       "location": "Jiit Technologies",
       "time": "March 2021 - June 2021",
       "description": "Used mathematical and statistical techniques over data to isolate the most important features and create ML models that generate predictions as well as valuable insights. Created custom sales forecasting and data analytics **ML pipeline endpoints** using **Flask** and **Facebook Prophet**."
     },
     {
-      "title": "Full Stack Developer",
+      "title": "Full Stack Engineer",
       "location": "Jiit Technologies",
       "time": "October 2020 - June 2021",
       "description": "Built an enterprise **ERP platform from scratch** to handle multi-module operations (inventory, human resources, logistics, and finance) utilizing **Angular**. Developed platforms for COVID tracking and digital marketplaces using **Capacitor**, **TypeScript**, **Cordova**, **SQL**, and **Flask**."
