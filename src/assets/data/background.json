@@ -1,52 +1,52 @@
 {
   "work": [
     {
-      "title": "Data Scientist Masterarbeit",
+      "title": "AI Engineer Masterarbeit",
       "location": "BMW & Deutsches Forschungszentrum für Künstliche Intelligenz (DFKI)",
       "time": "March 2026 - September 2026",
-      "description": "**Topic**: *Evaluating Multi-Turn Tool-Using Agentic RAG Systems: A Synthetic Benchmark Generation Approach*. Architected a modular evaluation framework for **tool-using Agentic RAG systems** to enable fine-grained failure localization. Built a **multi-turn synthetic benchmark** that combines deterministic **task planning** with diverse user **personas**. Engineered an **unsupervised retrieval engine** to audit a **RAG system** over **4M unannotated** corporate records."
+      "description": "**Topic**: *Evaluating Multi-Turn Agentic RAG Systems: A Synthetic Benchmark Generation Approach*. Architected a modular evaluation framework for **multi-turn, tool-augmented Agentic RAG systems**, enabling fine-grained failure localization. Built a **stateful, multi-turn synthetic benchmark pipeline** that pairs deterministic task planning with diverse user personas to simulate complex user behaviors. Engineered an **unsupervised retrieval engine optimized** to audit RAG system **accuracy and latency** across **4M unannotated** enterprise records."
     },
     {
-      "title": "Data Scientist Werkstudent",
+      "title": "AI Research Engineer Werkstudent",
       "location": "August-Wilhelm Scheer Institute",
       "time": "October 2024 - February 2026",
-      "description": "Developed a **KG-RAG** over unstructured technical documentation and a **Planning Agent**, using **LangChain** and **HuggingFace**. Implemented an **Autoencoder** model for **Anomaly Detection via Federated Learning** across edge devices. Developed a **Digital Twin** system using **PLCs**, **MQTT** and **Node-red**. Built an **MCP** bridge to connect natural language queries to a live database via an agent."
+      "description": "Designed **and deployed** a **Knowledge-Graph-Augmented RAG (KG-RAG)** system and an autonomous **Planning Agent** over unstructured technical documentation using **LangChain** and **HuggingFace**. Developed an **Autoencoder architecture** for real-time anomaly detection across distributed edge devices **orchestrated via Federated Learning**. Developed a **Digital Twin** system using **PLCs**, **MQTT**, and **Node-RED**. Built a Model Context Protocol (**MCP**) bridge to connect natural language queries to a live database via an agent."
     },
     {
       "title": "Big Data Platform Engineer",
       "location": "Oracle",
       "time": "November 2023 - October 2024",
-      "description": "Worked on the **Oracle Cloud Infrastructure** in the team of Big **Data Service** in **Oracle Analytics**. Developed tools for managing and deploying **big data clusters**.  Developed several Pipelines for workflow automation and testing, reducing manual efforts and increasing testing coverage."
+      "description": "Engineered and optimized automated **CI/CD testing pipelines** and custom internal tooling to streamline the deployment of large-scale **big data clusters** on **Oracle Cloud Infrastructure (OCI)**. Maintained robust automation frameworks within the Big Data Service team under **Oracle Analytics**, significantly reducing deployment overhead and improving system reliability."
     },
     {
-      "title": "Data Analyst Intern",
+      "title": "Data Science & Analytics Intern",
       "location": "BMW",
       "time": "March 2023 - September 2023",
-      "description": "Developed a high-accuracy **algorithm** for **detecting external battery replacements**. Resolved the issue of **missing database values** and implemented a **pipeline** to forward fill the gaps, **boosting service demand by 62%**. Designed a **Streamlit dashboard** to adjust prediction model parameters and obtain **real-time output** (**<8 seconds**) Configured **cloud-based environments** for working with **PySpark**. Applied various **visualization and data analytics** techniques to gain insights from **diverse data sources**. Identified **data patterns** in failing vehicle components and leveraged this information to **perform recalls only the impacted vehicles**."
+      "description": "Developed a high-accuracy **predictive anomaly detection algorithm** specialized in identifying external battery replacements. Engineered **scalable** time-series data pipelines using **PySpark** to ingest and process raw vehicle telemetry and cloud logs. Optimized data flows and **imputed missing features**, increasing data reliability and driving a **62% increase** in backend service utilization. **Architected an interactive loop** via a **Streamlit dashboard** allowing users to adjust predictive parameters and receive real-time system performance outputs in **< 8 seconds**. Applied various advanced visualization and analytical techniques to isolate patterns in failing vehicle components, leveraging insights to target precise vehicle recalls."
     },
     {
       "title": "Site Reliability Engineer",
       "location": "Xira",
       "time": "January 2022 - April 2022",
-      "description": "**Maintained** over 10 servers, **monitored** services and **enhanced** engineering processes. Built a **platform** to manage client **APIs** with payments and a subscription system using **NextJS**, **Stripe** and **Docker**. Maintained a **text analytics** model for message categorization, benefiting clients."
+      "description": "Managed **distributed server infrastructure**, established service monitoring telemetry, and streamlined engineering deployment workflows. Built a scalable API management platform, integrating secure payment and subscription systems using **Next.js**, **Stripe**, and **Docker**. Maintained a text analytics model for message categorization, benefiting clients."
     },
     {
       "title": "Production Engineering Fellow",
       "location": "Major League Hacking & Meta",
       "time": "June 2021 - September 2021",
-      "description": "Selected among 120 out of 20,000 applicants. Automated a **CI/CD** workflow using **GitHub Actions** for efficient deployment to a production server. Implemented app monitoring with **cAdvisor**, **Prometheus** and **Grafana**. Ensured **99.99% uptime** hosting it in a **Docker** container on a **AWS EC2** instance."
+      "description": "Selected internationally among 120 out of 20,000 applicants. Automated end-to-end **CI/CD workflows** using **GitHub Actions** for efficient, containerized deployment to production environments. Implemented system-wide metric monitoring dashboards using **cAdvisor**, **Prometheus**, and **Grafana** to ensure **99.99% uptime** hosted on an **AWS EC2** instance."
     },
     {
       "title": "Data Engineer",
       "location": "Jiit Technologies",
       "time": "March 2021 - June 2021",
-      "description": "Used mathematical and statistical technics over data to get the most important **features** and create ML models that generate **predictions** as well as valuable insights. Created ML analysis pipeline endpoints using **Flask**."
+      "description": "Used mathematical and statistical techniques over data to isolate the most important features and create ML models that generate predictions as well as valuable insights. Created custom sales forecasting and data analytics **ML pipeline endpoints** using **Flask** and **Facebook Prophet**."
     },
     {
       "title": "Full Stack Developer",
       "location": "Jiit Technologies",
       "time": "October 2020 - June 2021",
-      "description": "Developed a platform for **COVID tracking**, a **Marketplace** site and an **ERP** platform that can organize inventory, human resources shipments, income and expenses. Used **Angular + Capacitor**, **Typescript**, **Cordova**, **SQL** and **Flask**."
+      "description": "Built an enterprise **ERP platform from scratch** to handle multi-module operations (inventory, human resources, logistics, and finance) utilizing **Angular**. Developed platforms for COVID tracking and digital marketplaces using **Capacitor**, **TypeScript**, **Cordova**, **SQL**, and **Flask**."
     }
   ],
   "education": [
@@ -60,7 +60,7 @@
       "title": "BSc. Computer Science",
       "location": "Tecnológico de Monterrey",
       "time": "August 2019 - December 2023",
-      "description": "Grade: 94.6 / 100. Five times best software engineering GPA. **60% tuition** scholarship due to academic merit. **Key Coursework:** _ML | Time series | Algoriths & Optimization | Cloud Computing & Distributed | Automation & PLC | Vehicle User Interfaces_"
+      "description": "Grade: 94.6 / 100. Five times best software engineering GPA. **60% tuition** scholarship due to academic merit. **Key Coursework:** _ML | Time series | Algorithms & Optimization | Cloud Computing & Distributed | Automation & PLC | Vehicle User Interfaces_"
     },
     {
       "title": "Computer Science Exchange Student",
