@@ -25,7 +25,7 @@
       "description": "Developed a high-accuracy **predictive anomaly detection algorithm** specialized in identifying external battery replacements. Engineered **scalable** time-series data pipelines using **PySpark** to ingest and process raw vehicle telemetry and cloud logs. Optimized data flows and **imputed missing features**, increasing data reliability and driving a **62% increase** in backend service utilization. **Architected an interactive loop** via a **Streamlit dashboard** allowing users to adjust predictive parameters and receive real-time system performance outputs in **< 8 seconds**. Applied various advanced visualization and analytical techniques to isolate patterns in failing vehicle components, leveraging insights to target precise vehicle recalls."
     },
     {
-      "title": "Site Reliability Engineer",
+      "title": "AI & DevOps Engineer",
       "location": "Xira",
       "time": "January 2022 - April 2022",
       "description": "Managed **distributed server infrastructure**, established service monitoring telemetry, and streamlined engineering deployment workflows. Built a scalable API management platform, integrating secure payment and subscription systems using **Next.js**, **Stripe**, and **Docker**. Maintained a text analytics model for message categorization, benefiting clients."
