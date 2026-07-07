@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "@heroui/react";
 import Button from "../atoms/Button.atom";
-import Pdf from "../../assets/cv_photo.pdf";
+import Pdf from "../../assets/resume.pdf";
 
 function AboutCard() {
   return (
