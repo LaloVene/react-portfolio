@@ -2,40 +2,41 @@
   {
     "title": "Enterprise Knowledge Graph RAG Platform",
     "name": "Enterprise Knowledge Graph RAG Platform",
-    "description": "Developed an enterprise-grade **Knowledge Graph RAG** platform over technical documentation, combining **LangGraph**, **LangChain**, **Neo4j**, and containerized services. Implemented **multi-turn reasoning agents** that integrate graph traversal, pathfinding, and self-correcting retrieval loops to improve answer fidelity on complex technical queries.",
-    "imageUrl": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80",
+    "description": "Developed an enterprise **KG-RAG** system over technical documentation using **LangGraph**, **LangChain**, **Neo4j**, and **Docker**. Designed multi-turn reasoning agents that combine graph traversal, pathfinding, tool calling, and self-correcting retrieval to answer complex technical questions.",
+    "imageUrl": "https://plus.unsplash.com/premium_photo-1782411458121-ba8af98a6b91",
     "githubUrl": "",
     "url": "",
     "tags": [
+      "Agentic AI",
+      "KG-RAG",
       "LangGraph",
       "LangChain",
       "Neo4j",
-      "Knowledge Graph",
-      "RAG",
-      "Agentic AI",
+      "Knowledge Graphs",
       "Docker"
     ]
   },
   {
-    "title": "Master Thesis: Evaluating Multi-Turn Agentic RAG Systems",
-    "name": "Evaluating Multi-Turn Agentic RAG Systems",
-    "description": "Master thesis focused on evaluating **multi-turn, tool-using Agentic RAG systems** through a synthetic benchmark generation approach. Built a **LangGraph-based benchmark pipeline** to simulate realistic interaction trajectories, and designed an auditing framework for failure localization and performance analysis across large-scale enterprise retrieval workloads.",
-    "imageUrl": "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1200&q=80",
+    "title": "Multi-Turn Agentic RAG Evaluation",
+    "name": "Multi-Turn Agentic RAG Evaluation",
+    "description": "Designed a framework for evaluating and localizing failures in multi-turn, tool-using **Agentic RAG** systems. Built a **LangGraph-based** synthetic benchmark pipeline to test reasoning and tool-calling trajectories, alongside an unsupervised auditing framework for enterprise retrieval workloads spanning more than **4 million corporate records**.",
+    "imageUrl": "https://images.unsplash.com/photo-1538690560694-c770d02e202c",
     "githubUrl": "",
     "url": "",
     "tags": [
       "Agentic AI",
+      "LLM Evaluation",
       "RAG",
       "LangGraph",
+      "Synthetic Data",
       "Benchmarking",
-      "LLM Evaluation",
       "Failure Analysis"
     ]
   },
   {
     "title": "VectorDrive-Route: Autonomous BEV Trajectory Planning",
     "name": "VectorDrive-Route: Autonomous BEV Trajectory Planning",
-    "description": "Built an end-to-end **PyTorch** pipeline using **nuScenes**, **ResNet**, and depth lifting to project multi-camera perception into a robust **Bird's-Eye-View** representation. Designed a temporal planning head with dedicated **drivable-area** and **occupancy decoders** to generate safe, dynamically feasible trajectories under evolving traffic context.",
+    "description": "Built an end-to-end **PyTorch** pipeline using **nuScenes**, **ResNet**, and depth lifting to project multi-camera inputs into a **Bird's-Eye-View** representation. Designed a temporal motion-planning head with drivable-area and occupancy decoders to generate safe trajectories from changing traffic scenes.",
     "imageUrl": "https://github.com/LaloVene/vectordrive-route/blob/main/checkpoints/stages/stage7_trajectories.png?raw=true",
     "githubUrl": "https://github.com/LaloVene/vectordrive-route",
     "url": "",
@@ -43,31 +44,34 @@
       "PyTorch",
       "nuScenes",
       "ResNet",
+      "Computer Vision",
       "BEV",
       "Autonomous Driving",
       "Trajectory Planning"
     ]
   },
   {
-    "title": "Daten-Mapping-Framework fur die AAS",
-    "name": "Daten-Mapping-Framework fur die AAS",
-    "description": "Engineered a data mapping framework that transforms heterogeneous enterprise schemas into **Asset Administration Shell** models to enable **Industry 4.0** interoperability. Introduced a dual mapping strategy that separates flat relational structures from hierarchical asset contexts, allowing more reliable automated schema alignment in production environments.",
+    "title": "Data Mapping Framework for Asset Administration Shells",
+    "name": "Data Mapping Framework for Asset Administration Shells",
+    "description": "Developed a data transformation framework to map heterogeneous enterprise schemas into standardized **Asset Administration Shell** representations. Designed automated alignment logic for relational and hierarchical data models, enabling interoperability across **Industry 4.0** systems.",
     "imageUrl": "https://ojs.di-verlag.de/public/journals/1/cover_issue_669_de_DE.jpg",
-    "githubUrl": "https://ojs.di-verlag.de/index.php/atp_edition/article/view/2836",
-    "url": "",
+    "githubUrl": "",
+    "url": "https://doi.org/10.17560/atp.v68i5.2836",
+    "publicationText": "Published in atp magazin",
     "tags": [
       "Asset Administration Shell",
       "Industry 4.0",
-      "Data Mapping",
+      "Data Transformation",
       "Schema Alignment",
-      "Digital Twin"
+      "Digital Twin",
+      "Research"
     ]
   },
   {
     "title": "See Your World",
     "name": "See Your World",
-    "description": "Built an accessibility-focused image captioning application for people with limited vision, supporting **11 languages** with voice feedback. Engineered the deep learning captioning pipeline and productionized deployment using **TensorFlow**, **Flask**, and **Docker**, with an interface designed for low-friction capture and multilingual audio guidance.",
-    "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80",
+    "description": "Built an award-winning accessibility application that generates multilingual descriptions of visual scenes for people with visual impairments. Developed the image-captioning pipeline with **TensorFlow** and deployed it using **Flask**, **Docker**, and a cloud virtual machine, supporting voice output in **11 languages**.",
+    "imageUrl": "https://plus.unsplash.com/premium_photo-1681810994162-43dbe0919d3f",
     "githubUrl": "https://github.com/LaloVene/Image-Captioning-Project",
     "winnerText": "Hackathon award-winning project",
     "winnerLink": "https://devpost.com/software/see-your-world",
@@ -75,10 +79,11 @@
     "tags": [
       "Accessibility",
       "TensorFlow",
+      "Computer Vision",
       "Image Captioning",
       "Flask",
       "Docker",
-      "Multilingual NLP"
+      "Multilingual AI"
     ]
   }
 ]

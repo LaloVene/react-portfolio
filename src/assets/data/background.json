@@ -1,46 +1,46 @@
 {
   "work": [
     {
-      "title": "Data & AI Engineer Masterarbeit",
+      "title": "Data & AI Engineer (Master Thesis)",
       "location": "BMW & DFKI",
       "time": "March 2026 - September 2026",
-      "description": "**Topic:** *Evaluating Multi-Turn Agentic RAG Systems: A Synthetic Benchmark Generation Approach*. Designed a scalable evaluation framework for **tool-using LLM agents** with explicit failure localization across multi-turn trajectories. Built a **LangGraph-based synthetic benchmark generation pipeline** to produce controlled yet diverse interaction traces for stress-testing agent planning and retrieval behavior. Developed an unsupervised auditing framework to evaluate and scale **RAG** performance across **4M+ enterprise records**, with a focus on reliability and operational readiness."
+      "description": "Conducting a joint master thesis with **BMW**, **DFKI**, and **Saarland University** on evaluating multi-turn **Agentic RAG** systems through synthetic benchmark generation. Designed a scalable framework for failure localization in tool-using LLM agents and built a **LangGraph-based** pipeline to benchmark multi-turn reasoning and tool-calling trajectories. Developed an unsupervised auditing framework to assess enterprise RAG deployments across more than **4 million corporate records**."
     },
     {
-      "title": "AI Research Engineer Werkstudent",
+      "title": "AI Research Engineer (Working Student)",
       "location": "August-Wilhelm Scheer Institute",
       "time": "October 2024 - February 2026",
-      "description": "Industrialized multiple AI systems spanning **KG-RAG**, **Agentic AI**, **Digital Product Passports**, and **Industry 4.0** use cases. Built robust pipelines for information extraction, retrieval, reasoning, and anomaly detection across distributed systems. Designed multi-agent workflows combining **graph traversal**, **tool calling**, **retrieval**, and self-correction loops to improve factuality and end-to-end task completion in enterprise scenarios."
+      "description": "Industrialized enterprise AI systems spanning **KG-RAG**, **Agentic AI**, Digital Product Passports, and Industry 4.0 applications. Designed multi-agent workflows combining knowledge-graph traversal, tool calling, retrieval, and self-correction. Built pipelines for information extraction and ontology-based data mapping, an **MCP** assistant for live enterprise databases, and a **PyTorch** anomaly-detection system for distributed edge devices."
     },
     {
       "title": "Big Data Platform Engineer",
       "location": "Oracle",
       "time": "November 2023 - October 2024",
-      "description": "Engineered **CI/CD frameworks** and deployment tooling for distributed **OCI** big data services. Built automated testing and release-validation infrastructure to improve reliability, reduce deployment risk, and accelerate delivery across cloud platform rollouts."
+      "description": "Engineered **CI/CD frameworks** and deployment tooling for distributed big data services on **Oracle Cloud Infrastructure (OCI)**. Built automated testing and release-validation infrastructure to improve the reliability of large-scale cloud platform deployments."
     },
     {
       "title": "Data Science & Analytics Intern",
-      "location": "BMW",
+      "location": "BMW Group",
       "time": "March 2023 - September 2023",
-      "description": "Developed an **anomaly detection model** to identify vehicle battery depletion patterns from large-scale telemetry streams. Engineered **PySpark-based cloud services** and data workflows that increased service demand by **62%** while supporting recall-related investigations. Built NLP analytics tooling and interactive dashboards to support model iteration, operational interpretation, and faster data-informed decisions."
+      "description": "Developed an anomaly-detection model to identify vehicle battery depletion and replacement events from large-scale telemetry data. Engineered cloud-based **PySpark** services and data-quality solutions that increased calculated service-demand coverage by **62%** and supported vehicle recall investigations. Built **Streamlit** applications, NLP tools, and interactive dashboards for model tuning and operational analysis."
     },
     {
       "title": "AI & DevOps Engineer",
       "location": "Xira",
       "time": "January 2022 - April 2022",
-      "description": "Managed distributed **DevOps infrastructure** with automated monitoring, testing, and deployment workflows. Developed a Dockerized API management platform integrating payments, authentication, and service observability to improve reliability and operational visibility."
+      "description": "Managed distributed **DevOps infrastructure** and implemented automated monitoring, testing, and deployment workflows. Built a Dockerized API management platform with **Next.js**, integrating Stripe payments, authentication, and production service observability."
     },
     {
       "title": "Production Engineering Fellow",
       "location": "Major League Hacking & Meta",
       "time": "June 2021 - September 2021",
-      "description": "Completed a fellowship at Meta focused on **Linux administration**, **DevOps**, **SRE**, and scalable infrastructure practices. Automated AWS EC2 deployments using Docker and CI/CD while instrumenting production monitoring with **Prometheus** and **Grafana**."
+      "description": "Completed a Meta-sponsored fellowship focused on **Linux administration**, site reliability engineering, DevOps, and infrastructure automation. Built and operated cloud services on **AWS EC2** using Docker and CI/CD, with monitoring and observability through **Prometheus** and **Grafana**."
     },
     {
       "title": "Machine Learning & Full Stack Engineer",
       "location": "Jiit Technologies",
       "time": "October 2020 - June 2021",
-      "description": "Developed demand forecasting models and production data pipelines using **Python**, **Flask**, **SciPy**, **Prophet**, and **SQL**. Built an enterprise ERP platform with **Angular** to manage inventory, logistics, and financial workflows across business operations."
+      "description": "Developed demand-forecasting models and automated data pipelines using **Python**, Prophet, SciPy, Flask, and SQL. Built an enterprise resource planning platform with **Angular** to manage inventory, logistics, human resources, and financial operations."
     }
   ],
   "education": [
@@ -48,25 +48,25 @@
       "title": "MSc. Data Science and Artificial Intelligence",
       "location": "Universität des Saarlandes",
       "time": "October 2024 - September 2026",
-      "description": "**Thesis (Seminar Grade 1.0):** Evaluating **Multi-Turn Agentic RAG Systems** in collaboration with **BMW** and **DFKI**. Focused on **Machine Learning**, **NLP**, **Machine Translation**, **Computer Vision**, **Statistics**, **Quantum AI**, and **ML Cybersecurity**."
+      "description": "Specializing in **Machine Learning**, natural language processing, computer vision, statistics, and AI systems. **Master thesis:** *Evaluating Multi-Turn Agentic RAG Systems through Synthetic Benchmark Generation*, conducted in collaboration with **BMW** and **DFKI**. Received a grade of **1.0** for the preceding thesis seminar."
     },
     {
       "title": "BSc. Computer Science",
       "location": "Tecnológico de Monterrey",
       "time": "August 2019 - December 2023",
-      "description": "Graduated with **94.6/100 GPA**, earned a **60% merit-based scholarship**, and received a **Best GPA** distinction five times. Academic focus included **Machine Learning**, **Time Series**, **Algorithms and Optimization**, **Cloud Computing**, **Distributed Systems**, and **PLCs**."
+      "description": "Graduated with a GPA of **94.6/100** and received a **60% merit-based scholarship**. Earned the Best Software Engineering GPA distinction five times. Focused on machine learning, time series, algorithms and optimization, cloud computing, distributed systems, computer vision, and software engineering."
     },
     {
       "title": "Computer Science Exchange Student",
       "location": "Universität Ulm",
       "time": "October 2022 - September 2023",
-      "description": "Awarded a full **DAAD scholarship** for exchange studies in Germany. Focused on **Computer Vision**, **Autonomous Driving**, **Driver Assistance Systems**, **Human-Vehicle Interaction**, and **Statistics**."
+      "description": "Received a full **DAAD KOSPIE scholarship** for an academic exchange year in Germany. Completed coursework in computer vision, autonomous driving, driver-assistance systems, human-vehicle interaction, web engineering, and statistical methods."
     },
     {
       "title": "Technologist Degree in Automation and Robotics",
       "location": "CETI Colomos",
       "time": "August 2015 - June 2019",
-      "description": "Focused on **Industrial Robotics**, **PLCs**, **Control Systems**, **Digital Electronics**, **Sensors**, **Instrumentation**, and industrial automation fundamentals."
+      "description": "Completed technical training in industrial robotics, programmable logic controllers, control systems, digital electronics, sensors, and industrial automation. Developed an autonomous tennis-ball machine using PLC programming and PID-based speed and position control."
     }
   ]
 }
