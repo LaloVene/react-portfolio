@@ -13,8 +13,7 @@ function AboutCard() {
     >
       <Card.Content className="p-1">
         <p className="text-base text-neutral-800 dark:text-neutral-200 leading-relaxed font-medium">
-          I am a Data Engineer and AI Engineer specializing in data retrieval
-          pipelines, multi-turn Agentic RAG systems and GenAI research.
+          I am a Data & AI Engineer specializing in agentic RAG, knowledge retrieval, LLM evaluation, and production AI systems.
         </p>
         <div className="mt-4">
           <Button
