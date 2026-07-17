@@ -18,7 +18,7 @@
 \titlespacing*{\section}{0pt}{-4pt}{-2pt}
 
 % List formatting - Spacings for readability
-\setlist[itemize]{noitemsep, topsep=0.7pt, partopsep=0pt, parsep=0pt, itemsep=0pt, leftmargin=1.5em, labelsep=1.1em, after=\vspace{0.02in}}
+\setlist[itemize]{noitemsep, topsep=0.7pt, partopsep=0pt, parsep=0pt, itemsep=0pt, leftmargin=1.4em, labelsep=0.8em, after=\vspace{0.02in}}
 
 % Use Carlito under XeLaTeX/LuaLaTeX, with a pdfLaTeX-safe fallback.
 \usepackage{iftex}
@@ -47,7 +47,7 @@
       \hspace*{0cm}%
       \raisebox{-2.6cm}{%
         \setlength{\fboxsep}{0pt}%
-        \setlength{\fboxrule}{0.5pt}%
+        \setlength{\fboxrule}{0.1pt}%
         {\color{graytext}\fbox{\includegraphics[width=2.0cm, keepaspectratio]{pfp.png}}}%
       }%
     }%
@@ -56,101 +56,108 @@
 
 \begin{center}
   {\fontsize{18pt}{20.6pt}\selectfont \textbf{Eduardo Venegas Hernandez}} \\[0.08cm]
-  \small Data \& AI Engineer \textbar{} Munich, Germany \\[0.04cm]
-  \small \href{https://lalovene.netlify.app}{lalovene.netlify.app} \textbar{} \href{https://www.linkedin.com/in/eduardo-venegas/}{linkedin.com/in/eduardo-venegas} \textbar{} \href{https://github.com/LaloVene}{github.com/LaloVene}
+  \small AI \& ML Engineer \textbar{} Specialized in Agentic AI, RAG Systems, Data Engineering and MLOps. \\[0.04cm]
+  \small Munich, Germany \textbar{} \href{https://lalovene.netlify.app}{lalovene.netlify.app} \textbar{} \href{https://www.linkedin.com/in/eduardo-venegas/}{linkedin.com/in/eduardo-venegas} \textbar{} \href{https://github.com/LaloVene}{github.com/LaloVene}
 \end{center}
 
 \vspace{-0.20cm}
 
 \section*{SKILLS}
 
-\textbf{AI \& Data:} Gen AI, PyTorch, LangGraph, LangChain, RAG, PySpark, Vector DB, SQL, Knowledge Graphs, ETL Pipelines \\
+\textbf{AI \& Data:} GenAI, Agentic AI, PyTorch, LangGraph, LangChain, RAG, PySpark, SQL, Knowledge Graphs, Neo4j, ETL Pipelines \\
 \textbf{Software \& Frameworks:} Python, C/C++, TypeScript/JavaScript, FastAPI, Flask, Node.js, React, Next.js, Angular, Streamlit \\
-\textbf{MLOps \& DevOps:} MLflow, Docker, Kubernetes, CI/CD, AWS, Azure, Linux, Git, Grafana, MQTT, PLCs
+\textbf{Cloud \& MLOps:} AWS, Azure, OCI, Kubernetes, Docker, MLflow, CI/CD, Linux, Grafana, MQTT, PLCs
 \vspace{0.04cm}
 
 \section*{WORK EXPERIENCE}
 
 \entrytitle{Data \& AI Engineer Masterarbeit} {\small \textcolor{graytext}{BMW \& DFKI} \hfill \textcolor{graytext}{Munich, Germany \quad \textit{03/2026 - 09/2026}}}
 \begin{itemize}
-  \item Topic: Evaluating \textbf{Multi-Turn Agentic RAG Systems}: A \textbf{Synthetic Benchmark Generation} Approach.
-  \item \textbf{Led the design} of a scalable evaluation framework for precise failure localization in LLM agents.
-  \item Developed a \textbf{synthetic data pipeline} using \textbf{LangGraph} to benchmark multi-turn conversations.
+  \item Topic: \textit{Evaluating Multi-Turn Agentic RAG Systems: A Synthetic Benchmark Generation Approach}.
+  \item \textbf{Led the design} of a scalable evaluation framework for precise failure localization in tool-using LLM agents.
+  \item Developed a \textbf{synthetic data generation} pipeline using \textbf{LangGraph} to benchmark multi-turn trajectories.
   \item Built an \textbf{unsupervised auditing framework} to evaluate and scale RAG deployments across \textbf{4M+ corporate records}.
 \end{itemize}
 
 \vspace{0.1cm}
 \entrytitle{AI Research Engineer Werkstudent} {\small \textcolor{graytext}{August-Wilhelm Scheer Institute} \hfill \textcolor{graytext}{Saarbrücken, Germany \quad \textit{10/2024 - 02/2026}}}
 \begin{itemize}
-  \item Industrialized a \textbf{KG-RAG} system over unstructured technical documents using \textbf{LangChain} and \textbf{HuggingFace}.
-  \item Developed a \textbf{PyTorch Autoencoder} for real-time anomaly detection across distributed devices via Federated Learning.
+  \item Industrialized multiple AI systems spanning \textbf{KG RAG}, \textbf{Agentic AI}, \textbf{Digital Product Passports}, and \textbf{Industry 4.0} applications.
+  \item Built AI pipelines for information extraction, reasoning, and anomaly detection across \textbf{distributed devices}.
+  \item Designed multi-agent workflows incorporating \textbf{graph traversal}, \textbf{tool calling}, \textbf{retrieval}, and self-correction mechanisms.
 \end{itemize}
 
 \vspace{0.1cm}
 \entrytitle{Big Data Platform Engineer} {\small \textcolor{graytext}{Oracle} \hfill \textcolor{graytext}{Guadalajara, Mexico \quad \textit{11/2023 - 10/2024}}}
 \begin{itemize}
-  \item Engineered \textbf{CI/CD testing pipelines} and deployment tools for big data services on \textbf{Oracle Cloud (OCI)}.
-  \item Designed modular, testable \textbf{automation frameworks} to reduce regression test cycles for big data services.
+  \item Engineered \textbf{CI/CD frameworks} and deployment tooling for \textbf{Oracle Cloud big data services}.
+  \item Developed \textbf{automated testing infrastructure} supporting distributed cloud platform releases.
 \end{itemize}
 
 \vspace{0.1cm}
 \entrytitle{Data Science \& Analytics Intern} {\small \textcolor{graytext}{BMW Group} \hfill \textcolor{graytext}{Munich, Germany \quad \textit{03/2023 - 09/2023}}}
 \begin{itemize}
-  \item Developed a high-accuracy anomaly detection model to identify vehicle battery replacements from telemetry data.
-  \item Engineered scalable \textbf{data pipelines} in \textbf{PySpark} to process vehicle telemetry and cloud log databases.
-  \item Optimized database queries and data quality, leading to a 62\% increase in analytical service utilization.
-  \item Developed an interactive dashboard to adjust predictive model parameters and visualize system performance.
+  \item Developed an \textbf{anomaly detection model} to identify vehicle battery depletion from \textbf{large-scale vehicle telemetry}.
+  \item Engineered \textbf{PySpark} cloud services, increasing service demands by \textbf{62\%} while supporting recall investigations.
+  \item Built \textbf{NLP analytics tools}, and interactive dashboards to support model optimization and operational decision-making.
 \end{itemize}
 
 \vspace{0.1cm}
 \entrytitle{AI \& DevOps Engineer} {\small \textcolor{graytext}{Xira} \hfill \textcolor{graytext}{Mexico City, Mexico \quad \textit{01/2022 - 04/2022}}}
 \begin{itemize}
-  \item Managed \textbf{distributed DevOps infrastructure}, establishing automated service monitoring and testing workflows.
-  \item Developed a secure \textbf{API management platform} integrating Stripe payments using Next.js and Docker.
+  \item Managed distributed \textbf{DevOps infrastructure}, implementing automated monitoring, testing, and deployment workflows.
+  \item Developed a Docker \textbf{API management platform} integrating Stripe payments, authentication, and service observability.
 \end{itemize}
 
 \vspace{0.1cm}
 \entrytitle{Production Engineer Fellow} {\small \textcolor{graytext}{Major League Hacking \& Meta} \hfill \textcolor{graytext}{New York, USA \quad \textit{06/2021 - 09/2021}}}
 \begin{itemize}
-  \item Selected internationally among 120 out of 20,000 applicants. Implemented monitoring with \textbf{Prometheus} and \textbf{Grafana}.
-  \item Automated DevOps workflows and \textbf{CI/CD} pipelines for production deployments on \textbf{AWS EC2} using Docker.
+  \item Completed fellowship at Facebook focused on \textbf{Linux administration}, \textbf{DevOps}, \textbf{SRE}, and scalable infrastructure.
+  \item Automated deployments on \textbf{AWS EC2} using Docker and CI/CD while monitoring with \textbf{Prometheus} and \textbf{Grafana}.
 \end{itemize}
 
 \vspace{0.1cm}
 \entrytitle{Machine Learning \& Full Stack Engineer} {\small \textcolor{graytext}{Jiit Technologies} \hfill \textcolor{graytext}{Guadalajara, Mexico \quad \textit{10/2020 - 06/2021}}}
 \begin{itemize}
-  \item Designed custom sales forecasting and data pipelines using \textbf{Python} (Flask, SciPy, Prophet, and SQL).
-  \item Developed an ERP web platform to manage inventory, logistics, and financial transactions using Angular.
+  \item Developed demand forecasting models and data pipelines using \textbf{Python} (Flask, SciPy, Prophet, and SQL).
+  \item Built an ERP platform using \textbf{Angular} to manage inventory, logistics, and financial operations across business workflows.
 \end{itemize}
 
 \section*{EDUCATION}
 
 \entrytitle{MSc. Data Science and Artificial Intelligence} {\small \textcolor{graytext}{Universität des Saarlandes} \hfill \textcolor{graytext}{Saarbrücken, Germany \quad \textit{10/2024 - 09/2026}}}
 \begin{itemize}
-  \item \textit{Statistics, ML Cybersecurity, NLP, Machine Translation, Quantum AI, Image Processing \& Computer Vision}.
   \item \textbf{Thesis (Seminar Grade 1.0)}: Evaluating \textbf{Multi-Turn Agentic RAG Systems} (In collaboration with \textbf{BMW} \& \textbf{DFKI}).
+  \item Focus areas: \textit{Machine Learning, NLP, Machine Translation, Computer Vision, Statistics, Quantum AI and ML Cybersecurity}.
 \end{itemize}
 
 \vspace{0.1cm}
 \entrytitle{BSc. Computer Science} {\small \textcolor{graytext}{Tecnológico de Monterrey} \hfill \textcolor{graytext}{Guadalajara, Mexico \quad \textit{08/2019 - 12/2023}}}
 \begin{itemize}
-  \item \textit{ML, Time series, Algorithms \& Optimization, Cloud Computing \& Distributed, Vehicle User Interfaces, PLC}.
+  \item GPA: \textbf{94.6/100}; awarded a \textbf{60\% merit-based scholarship} and recognized with the \textbf{Best GPA} distinction five times.
+  \item Focus areas: \textit{Machine Learning, Time Series, Algorithms \& Optimization, Cloud Computing, Distributed Systems, and PLCs}.
 \end{itemize}
 
 \vspace{0.1cm}
 \entrytitle{Computer Science Exchange Student} {\small \textcolor{graytext}{Universität Ulm} \hfill \textcolor{graytext}{Ulm, Germany \quad \textit{10/2022 - 09/2023}}}
 \begin{itemize}
-  \item Full scholarship recipient from \textbf{DAAD}. \textit{Computer Vision II, Autonomous Driving and Assistance Systems, Statistics}.
+  \item Awarded a full \textbf{DAAD scholarship} for academic exchange studies in Germany.
+  \item Focus areas: \textit{Computer Vision, Autonomous Driving, Driver Assistance Systems, Human-Vehicle Interaction, and Statistics}.
 \end{itemize}
 
 \vspace{0.1cm}
 \entrytitle{Technologist Degree in Automation and Robotics} {\small \textcolor{graytext}{CETI Colomos} \hfill \textcolor{graytext}{Guadalajara, Mexico \quad \textit{08/2015 - 06/2019}}}
 \begin{itemize}
-  \item Grade: 94.6 / 100. Five times best software engineering GPA. \textbf{60\% tuition scholarship due to academic merit}.
-  \item \textit{Control Laboratory (I \& II), Industrial Robotics, PLCs, Digital Electronics, Controllers Laboratory, Sensor Systems}
+  \item Focus areas: \textit{Industrial Robotics, PLCs, Control Systems, Digital Electronics, Sensors, Instrumentation, and Automation}.
 \end{itemize}
 
 \section*{PROJECTS}
+
+\entrytitle{Enterprise Knowledge Graph RAG Platform} \hfill {\small \textcolor{graytext}{\textit{AWSi}}}
+\begin{itemize}
+  \item Developed an enterprise \textbf{KG-RAG system} over technical documentation using \textbf{LangGraph}, \textbf{LangChain}, \textbf{Neo4j} and \textbf{Docker}.
+  \item Implemented \textbf{multi-turn reasoning agents} combining BFS traversal, pathfinding and self-correcting retrieval.
+\end{itemize}
 
 \entrytitle{VectorDrive-Route: Autonomous BEV Trajectory Planning} \hfill {\small \textcolor{graytext}{\textit{\href{https://github.com/LaloVene/vectordrive-route}{Github}}}}
 \begin{itemize}
@@ -161,23 +168,16 @@
 \vspace{0.1cm}
 \entrytitle{Daten-Mapping-Framework für die AAS} \hfill {\small \textcolor{graytext}{\textit{\href{https://doi.org/10.17560/atp.v68i5.2836}{DOI: 10.17560/atp.v68i5.2836}}}}
 \begin{itemize}
-  \item Developed a mapping framework from \textbf{schemas} to \textbf{Asset Administration Shell} to achieve interoperability in \textbf{Industry 4.0}.
-  \item Designed a dual alignment strategy separating standard \textbf{relational tables} from \textbf{hierarchical assets}.
-\end{itemize}
-
-\vspace{0.1cm}
-\entrytitle{See Your World} \hfill {\small \textcolor{graytext}{\textit{\href{https://github.com/LaloVene/Image-Captioning-Project}{Github}}}}
-\begin{itemize}
-  \item Crafted a hackathon award-winning app for the visually impaired, supporting 11 languages.
-  \item Engineered \textbf{Image Captioning DL model} with \textbf{TensorFlow}, deployed using \textbf{Flask}, \textbf{Docker}, and \textbf{Google Cloud VM}.
+  \item Developed a framework to transform enterprise data into \textbf{Asset Administration Shell} models for \textbf{Industry 4.0} interoperability.
+  \item Designed a dual mapping strategy supporting \textbf{hierarchical asset structures} for automated schema alignment.
 \end{itemize}
 
 \begin{minipage}[t]{0.62\textwidth}
   \section*{CERTIFICATES}
   \begin{itemize}
+    \item \textbf{AWS Certified Solutions Architect - Associate (SAA-C03)} {\small \textcolor{graytext}{Expected - Oct 2026}}
     \item \textbf{Mathematics for Data Science Specialization} {\small \textcolor{graytext}{HSE - 2021}}
     \item \textbf{Data Science Professional Certificate} {\small \textcolor{graytext}{Harvard - 2020}}
-    \item \textbf{Python Data Science Professional Certificate} {\small \textcolor{graytext}{IBM - 2020}}
     \item \textbf{Deep Learning Professional Certificate} {\small \textcolor{graytext}{IBM - 2020}}
   \end{itemize}
 \end{minipage}
