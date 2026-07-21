@@ -1,13 +1,13 @@
 {
   "work": [
     {
-      "title": "Data & AI Engineer (Master Thesis)",
+      "title": "Data & AI Engineer Masterarbeit",
       "location": "BMW & DFKI (German Research Center for Artificial Intelligence) & Saarland University",
       "time": "March 2026 - September 2026",
       "description": "Conducting a joint master thesis with **BMW**, **DFKI**, and **Saarland University** on evaluating multi-turn **Agentic RAG** systems through synthetic benchmark generation. Designed a scalable framework for failure localization in tool-using LLM agents and built a **LangGraph-based** pipeline to benchmark multi-turn reasoning and tool-calling trajectories. Developed an unsupervised auditing framework to assess enterprise RAG deployments across more than **4 million corporate records**."
     },
     {
-      "title": "AI Research Engineer (Working Student)",
+      "title": "AI Research Engineer Werkstudent",
       "location": "August-Wilhelm Scheer Institute",
       "time": "October 2024 - February 2026",
       "description": "Industrialized enterprise AI systems spanning **KG-RAG**, **Agentic AI**, Digital Product Passports, and Industry 4.0 applications. Designed multi-agent workflows combining knowledge-graph traversal, tool calling, retrieval, and self-correction. Built pipelines for information extraction and ontology-based data mapping, an **MCP** assistant for live enterprise databases, and a **PyTorch** anomaly-detection system for distributed edge devices."
@@ -19,7 +19,7 @@
       "description": "Engineered **CI/CD frameworks** and deployment tooling for distributed big data services on **Oracle Cloud Infrastructure (OCI)**. Built automated testing and release-validation infrastructure to improve the reliability of large-scale cloud platform deployments."
     },
     {
-      "title": "Data Science & Analytics Intern",
+      "title": "Vehicle Data Science & ML Engineer Praktikant",
       "location": "BMW Group",
       "time": "March 2023 - September 2023",
       "description": "Developed an anomaly-detection model to identify vehicle battery depletion and replacement events from large-scale telemetry data. Engineered cloud-based **PySpark** services and data-quality solutions that increased calculated service-demand coverage by **62%** and supported vehicle recall investigations. Built **Streamlit** applications, NLP tools, and interactive dashboards for model tuning and operational analysis."
