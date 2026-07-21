@@ -19,7 +19,7 @@
       "description": "Engineered **CI/CD frameworks** and deployment tooling for distributed big data services on **Oracle Cloud Infrastructure (OCI)**. Built automated testing and release-validation infrastructure to improve the reliability of large-scale cloud platform deployments."
     },
     {
-      "title": "Vehicle Data Science & ML Engineer Praktikant",
+      "title": "Vehicle Data Science & Analytics Praktikant",
       "location": "BMW Group",
       "time": "March 2023 - September 2023",
       "description": "Developed an anomaly-detection model to identify vehicle battery depletion and replacement events from large-scale telemetry data. Engineered cloud-based **PySpark** services and data-quality solutions that increased calculated service-demand coverage by **62%** and supported vehicle recall investigations. Built **Streamlit** applications, NLP tools, and interactive dashboards for model tuning and operational analysis."
