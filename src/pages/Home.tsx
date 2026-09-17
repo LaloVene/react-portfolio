@@ -1,6 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "../context/ThemeContext";
 import Header from "../components/Header";
+import TableOfContents from "../components/TableOfContents";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Experience from "../components/Experience";
@@ -14,6 +15,7 @@ export default function Home() {
     <ThemeProvider>
       <div className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] selection:bg-[#E63946] selection:text-white relative transition-colors duration-250">
         <Header />
+        <TableOfContents />
         <main>
           <Hero />
           <About id="about" number="01" title="ABOUT" />
