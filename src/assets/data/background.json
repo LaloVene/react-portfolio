@@ -4,36 +4,42 @@
       "title": "Data & AI Engineer Masterarbeit",
       "location": "BMW & DFKI (German Research Center for Artificial Intelligence) & Saarland University",
       "time": "March 2026 - September 2026",
+      "logo": "/assets/logos/dfki.png",
       "description": "Conducting a joint master thesis with **BMW**, **DFKI**, and **Saarland University** on evaluating multi-turn **Agentic RAG** systems through synthetic benchmark generation. Designed a scalable framework for failure localization in tool-using LLM agents and built a **LangGraph-based** pipeline to benchmark multi-turn reasoning and tool-calling trajectories. Developed an unsupervised auditing framework to assess enterprise RAG deployments across more than **4 million corporate records**."
     },
     {
       "title": "AI Research Engineer Werkstudent",
       "location": "August-Wilhelm Scheer Institute",
       "time": "October 2024 - February 2026",
+      "logo": "/assets/logos/aws_institut.png",
       "description": "Industrialized enterprise AI systems spanning **KG-RAG**, **Agentic AI**, Digital Product Passports, and Industry 4.0 applications. Designed multi-agent workflows combining knowledge-graph traversal, tool calling, retrieval, and self-correction. Built pipelines for information extraction and ontology-based data mapping, an **MCP** assistant for live enterprise databases, and a **PyTorch** anomaly-detection system for distributed edge devices."
     },
     {
       "title": "Big Data Platform Engineer II -- Approved for Senior",
       "location": "Oracle",
       "time": "November 2023 - October 2024",
+      "logo": "/assets/logos/oracle.png",
       "description": "Engineered **CI/CD frameworks** and deployment tooling for distributed big data services on **Oracle Cloud Infrastructure (OCI)**. Built automated testing and release-validation infrastructure to improve the reliability of large-scale cloud platform deployments."
     },
     {
       "title": "Vehicle Data Science & Analytics Praktikant",
       "location": "BMW Group",
       "time": "March 2023 - September 2023",
+      "logo": "/assets/logos/bmw.png",
       "description": "Developed an anomaly-detection model to identify vehicle battery depletion and replacement events from large-scale telemetry data. Engineered cloud-based **PySpark** services and data-quality solutions that increased calculated service-demand coverage by **62%** and supported vehicle recall investigations. Built **Streamlit** applications, NLP tools, and interactive dashboards for model tuning and operational analysis."
     },
     {
       "title": "AI & DevOps Engineer",
       "location": "Xira",
       "time": "January 2022 - April 2022",
+      "logo": "/assets/logos/xira.png",
       "description": "Managed distributed **DevOps infrastructure** and implemented automated monitoring, testing, and deployment workflows. Built a Dockerized API management platform with **Next.js**, integrating Stripe payments, authentication, and production service observability."
     },
     {
       "title": "Production Engineering Fellow",
       "location": "Major League Hacking & Meta",
       "time": "June 2021 - September 2021",
+      "logo": "/assets/logos/mlh.png",
       "description": "Completed a fellowship at Facebook focused on **Linux administration**, site reliability engineering, DevOps, and infrastructure automation. Built and operated cloud services on **AWS EC2** using Docker and CI/CD, with monitoring and observability through **Prometheus** and **Grafana**."
     },
     {
@@ -48,24 +54,28 @@
       "title": "MSc. Data Science and Artificial Intelligence",
       "location": "Universität des Saarlandes",
       "time": "October 2024 - September 2026",
+      "logo": "/assets/logos/saarland.png",
       "description": "Specializing in **Machine Learning**, natural language processing, computer vision, statistics, and AI systems. **Master thesis:** *Evaluating Multi-Turn Agentic RAG Systems through Synthetic Benchmark Generation*, conducted in collaboration with **BMW** and **DFKI**. Received a grade of **1.0** for the preceding thesis seminar."
     },
     {
       "title": "BSc. Computer Science",
       "location": "Tecnológico de Monterrey",
       "time": "August 2019 - December 2023",
+      "logo": "/assets/logos/tec.png",
       "description": "Graduated with a GPA of **94.6/100** and received a **60% merit-based scholarship**. Earned the Best Software Engineering GPA distinction five times. Focused on machine learning, time series, algorithms and optimization, cloud computing, distributed systems, computer vision, and software engineering."
     },
     {
       "title": "DAAD Exchange Scholar - Computer Science",
       "location": "Universität Ulm",
       "time": "October 2022 - September 2023",
+      "logo": "/assets/logos/ulm.png",
       "description": "Received a full **DAAD KOSPIE scholarship** for an academic exchange year in Germany. Completed coursework in computer vision, autonomous driving, driver-assistance systems, human-vehicle interaction, web engineering, and statistical methods."
     },
     {
       "title": "Associate of Science (A.S.) in Robotics and Automation Engineering",
       "location": "CETI Colomos",
       "time": "August 2015 - June 2019",
+      "logo": "/assets/logos/ceti.png",
       "description": "Completed technical training in industrial robotics, programmable logic controllers, control systems, digital electronics, sensors, and industrial automation. Developed an autonomous tennis-ball machine using PLC programming and PID-based speed and position control."
     }
   ]

@@ -38,6 +38,20 @@
   --glass-tint-start: rgba(230, 57, 70, 0.06);
   --glass-tint-end: rgba(29, 53, 87, 0.08);
 
+  /* ── Particle field tokens (magnetic dot grid) ──────────────────────
+     Channel triplets: space-separated RGB, no rgb() wrapper, so both
+     CSS `rgb(var(--particle-dot-rgb) / 0.2)` and JS string composition
+     can apply arbitrary alpha. */
+  --particle-dot-rgb: 18 18 18;
+  --particle-accent-red-rgb: 230 57 70;
+  --particle-accent-blue-rgb: 29 53 87;
+  --particle-accent-yellow-rgb: 244 208 63;
+  --particle-base-alpha: 0.13;
+  --particle-glow-alpha: 0.42;
+  --particle-line-alpha: 0.035;
+  --particle-grain-opacity: 0.025;
+  --particle-vignette-alpha: 0.05;
+
   color-scheme: light;
   font-family: "Space Grotesk", sans-serif;
   font-size: 16px;
@@ -70,6 +84,19 @@ html.dark {
   --glass-tint-start: rgba(230, 57, 70, 0.12);
   --glass-tint-end: rgba(29, 53, 87, 0.16);
 
+  /* ── Particle field tokens (dark) ──────────────────────────────────
+     Marks invert to near-white against #0a0a0a; grain and vignette run
+     hotter because the black ground swallows low-alpha detail. */
+  --particle-dot-rgb: 250 250 250;
+  --particle-accent-red-rgb: 230 57 70;
+  --particle-accent-blue-rgb: 93 124 173; /* #1D3557 is unreadable on black — lightened */
+  --particle-accent-yellow-rgb: 244 208 63;
+  --particle-base-alpha: 0.16;
+  --particle-glow-alpha: 0.5;
+  --particle-line-alpha: 0.045;
+  --particle-grain-opacity: 0.035;
+  --particle-vignette-alpha: 0.22;
+
   color-scheme: dark;
 }
 
@@ -99,6 +126,25 @@ html.dark {
 
 .liquid-lens-tint {
   background: linear-gradient(to top right, var(--glass-tint-start), transparent, var(--glass-tint-end)) !important;
+}
+
+/* Bauhaus Depth Layers — pure CSS, no images, no JS, no animation */
+.bauhaus-vignette {
+  pointer-events: none;
+  background: radial-gradient(ellipse 120% 90% at 50% 40%, transparent 40%, rgb(0 0 0 / var(--particle-vignette-alpha)) 100%);
+}
+
+.bauhaus-grain {
+  pointer-events: none;
+  opacity: var(--particle-grain-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='bauhausGrain' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23bauhausGrain)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  background-repeat: repeat;
+  mix-blend-mode: overlay;
+}
+
+html.dark .bauhaus-grain {
+  mix-blend-mode: soft-light;
 }
 
 html {
@@ -144,4 +190,15 @@ a {
 ::-webkit-scrollbar-thumb {
   background: var(--text-muted);
   border-radius: 3px;
+}
+
+/* Reduced motion: kill the texture layer and hard-stop smooth scrolling */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --particle-grain-opacity: 0;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
 }

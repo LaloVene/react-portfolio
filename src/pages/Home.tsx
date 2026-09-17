@@ -9,14 +9,16 @@ import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Certificates from "../components/Certificates";
 import Footer from "../components/Footer";
+import ParticleField from "../components/ParticleField";
 
 export default function Home() {
   return (
     <ThemeProvider>
       <div className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] selection:bg-[#E63946] selection:text-white relative transition-colors duration-250">
+        <ParticleField />
         <Header />
         <TableOfContents />
-        <main className="xl:pl-28 2xl:pl-36 transition-all duration-200">
+        <main className="relative z-10 xl:pl-28 2xl:pl-36 transition-all duration-200">
           <Hero />
           <About id="about" number="01" title="ABOUT" />
           <Experience id="experience" number="02" title="EXPERIENCE" />

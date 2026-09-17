@@ -22,8 +22,13 @@ interface ExperienceItem {
   location: string;
   time: string;
   description: string;
+  logo?: string;
   type: "work" | "education";
 }
+
+/** Uniform logo box: every organization mark renders in the same 64x48 white tile. */
+const LOGO_BOX =
+  "w-16 h-12 shrink-0 mt-0.5 flex items-center justify-center rounded-[7px] bg-white overflow-hidden";
 
 const workItems: ExperienceItem[] = backgroundData.work.map((item) => ({
   ...item,
@@ -118,7 +123,6 @@ interface TimelineCardProps {
 function TimelineCard({ item, index }: TimelineCardProps) {
   const isWork = item.type === "work";
   const accentColor = isWork ? "#E63946" : "#1D3557";
-  const Icon = isWork ? IconBriefcase : IconSchool;
 
   return (
     <motion.div
@@ -148,16 +152,7 @@ function TimelineCard({ item, index }: TimelineCardProps) {
 
       {/* Role Title & Date */}
       <div className="flex items-start gap-3 mb-3">
-        <div
-          className="p-1.5 shrink-0 mt-0.5 border"
-          style={{
-            borderColor: `${accentColor}40`,
-            backgroundColor: `${accentColor}10`,
-            color: accentColor,
-          }}
-        >
-          <Icon size={16} />
-        </div>
+        <OrganizationLogo item={item} accentColor={accentColor} isWork={isWork} />
         <div className="w-full">
           <h4 className="text-base sm:text-lg font-bold text-[var(--text-primary)] leading-snug group-hover:text-[#E63946] transition-colors">
             {item.title}
@@ -182,6 +177,41 @@ function TimelineCard({ item, index }: TimelineCardProps) {
         </ReactMarkdown>
       </div>
     </motion.div>
+  );
+}
+
+interface OrganizationLogoProps {
+  item: ExperienceItem;
+  accentColor: string;
+  isWork: boolean;
+}
+
+/**
+ * Organization logo inside a fixed-size tile. Falls back to the role-type icon
+ * when an entry has no logo or the image fails to load.
+ */
+function OrganizationLogo({ item, accentColor, isWork }: OrganizationLogoProps) {
+  const [failed, setFailed] = useState(false);
+  const FallbackIcon = isWork ? IconBriefcase : IconSchool;
+
+  if (!item.logo || failed) {
+    return (
+      <div className={LOGO_BOX} style={{ color: accentColor }}>
+        <FallbackIcon size={20} />
+      </div>
+    );
+  }
+
+  return (
+    <div className={LOGO_BOX}>
+      <img
+        src={item.logo}
+        alt={`${item.location} logo`}
+        onError={() => setFailed(true)}
+        className="w-full h-full object-contain p-1"
+        loading="lazy"
+      />
+    </div>
   );
 }
 
