@@ -16,7 +16,7 @@ export default function Home() {
       <div className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] selection:bg-[#E63946] selection:text-white relative transition-colors duration-250">
         <Header />
         <TableOfContents />
-        <main>
+        <main className="xl:pl-28 2xl:pl-36 transition-all duration-200">
           <Hero />
           <About id="about" number="01" title="ABOUT" />
           <Experience id="experience" number="02" title="EXPERIENCE" />

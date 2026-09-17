@@ -17,7 +17,7 @@ export function Footer() {
       id="contact"
       className="relative w-full border-t border-[var(--border-primary)] bg-[var(--card-bg)] text-[var(--text-primary)] pt-16 md:pt-20 pb-12 transition-colors duration-250"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 xl:pl-28 2xl:pl-36 transition-all duration-200">
         {/* Section Tag */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

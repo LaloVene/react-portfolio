@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { IconMenu2, IconX, IconSun, IconMoon } from "@tabler/icons-react";
 import { useTheme } from "../context/ThemeContext";
@@ -7,19 +7,44 @@ interface NavItem {
   num: string;
   label: string;
   href: string;
+  id: string;
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { num: "01", label: "ABOUT", href: "#about" },
-  { num: "02", label: "WORK", href: "#experience" },
-  { num: "03", label: "PROJECTS", href: "#projects" },
-  { num: "04", label: "SKILLS", href: "#skills" },
-  { num: "05", label: "CONTACT", href: "#contact" },
+  { num: "01", label: "ABOUT", href: "#about", id: "about" },
+  { num: "02", label: "WORK", href: "#experience", id: "experience" },
+  { num: "03", label: "PROJECTS", href: "#projects", id: "projects" },
+  { num: "04", label: "SKILLS", href: "#skills", id: "skills" },
+  { num: "05", label: "CONTACT", href: "#contact", id: "contact" },
 ];
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("about");
+  const [hoveredSection, setHoveredSection] = useState<string | null>(null);
   const { theme, toggleTheme } = useTheme();
+
+  // Track active scroll section for the liquid glass snap bubble
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY + window.innerHeight * 0.35;
+      for (const item of NAV_ITEMS) {
+        const el = document.getElementById(item.id);
+        if (el) {
+          const top = el.offsetTop;
+          const height = el.offsetHeight;
+          if (scrollY >= top && scrollY < top + height) {
+            setActiveSection(item.id);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
@@ -32,6 +57,8 @@ export function Header() {
     }
     setMobileMenuOpen(false);
   };
+
+  const currentHighlight = hoveredSection || activeSection;
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[var(--header-bg)] backdrop-blur-md border-b border-[var(--border-primary)] transition-colors duration-250">
@@ -67,25 +94,80 @@ export function Header() {
           </div>
         </a>
 
-        {/* Desktop Nav Links */}
+        {/* Desktop Nav Links - with dedicated liquid-lens classes */}
         <nav
-          className="hidden md:flex items-center gap-8"
+          className="hidden md:flex items-center gap-3 relative py-1"
           aria-label="Primary navigation"
+          onMouseLeave={() => setHoveredSection(null)}
         >
-          {NAV_ITEMS.map((item) => (
-            <a
-              key={item.num}
-              href={item.href}
-              onClick={(e) => handleNavClick(e, item.href)}
-              className="group flex items-center gap-1.5 text-xs font-mono uppercase tracking-widest text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors duration-200"
-            >
-              <span className="text-[#E63946] font-bold">[{item.num}]</span>
-              <span className="relative">
-                {item.label}
-                <span className="absolute left-0 bottom-[-4px] w-0 h-[1px] bg-[#E63946] transition-all duration-200 group-hover:w-full" />
-              </span>
-            </a>
-          ))}
+          {NAV_ITEMS.map((item) => {
+            const isSelected = currentHighlight === item.id;
+
+            return (
+              <a
+                key={item.num}
+                href={item.href}
+                onClick={(e) => handleNavClick(e, item.href)}
+                onMouseEnter={() => setHoveredSection(item.id)}
+                className="relative flex items-center text-xs font-mono uppercase tracking-widest transition-all duration-200"
+                style={{
+                  paddingTop: isSelected ? "0.5rem" : "0.375rem",
+                  paddingBottom: isSelected ? "0.5rem" : "0.375rem",
+                  paddingLeft: isSelected ? "1.25rem" : "0.75rem",
+                  paddingRight: isSelected ? "1.25rem" : "0.75rem",
+                  gap: isSelected ? "0.625rem" : "0.375rem",
+                }}
+              >
+                {/* Liquid Glass Magnifying Lens Bubble */}
+                {isSelected && (
+                  <motion.div
+                    layoutId="liquid-glass-header-lens"
+                    className="absolute inset-0 rounded-full pointer-events-none -z-10 overflow-hidden"
+                    transition={{
+                      type: "spring",
+                      stiffness: 450,
+                      damping: 30,
+                      mass: 0.6,
+                    }}
+                  >
+                    {/* Glass Bubble Base: Crisp in light mode, smoky in dark mode */}
+                    <div className="liquid-lens-surface absolute inset-0 rounded-full" />
+
+                    {/* Specular curved reflection highlight */}
+                    <div className="liquid-lens-highlight absolute -top-1 left-2 right-2 h-2.5 rounded-full blur-[0.5px]" />
+
+                    {/* Prismatic edge chromatic aberration tint */}
+                    <div className="liquid-lens-tint absolute inset-0 rounded-full" />
+                  </motion.div>
+                )}
+
+                <motion.span
+                  animate={{
+                    scale: isSelected ? 1.2 : 1,
+                  }}
+                  transition={{ duration: 0.2 }}
+                  className={`font-bold transition-colors ${
+                    isSelected ? "text-[#E63946]" : "text-[var(--text-muted)]"
+                  }`}
+                >
+                  [{item.num}]
+                </motion.span>
+                <motion.span
+                  animate={{
+                    scale: isSelected ? 1.2 : 1,
+                  }}
+                  transition={{ duration: 0.2 }}
+                  className={`font-semibold transition-colors ${
+                    isSelected
+                      ? "text-[var(--text-primary)]"
+                      : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
+                  }`}
+                >
+                  {item.label}
+                </motion.span>
+              </a>
+            );
+          })}
         </nav>
 
         {/* Right side controls: Theme Toggle + Mobile Menu */}
@@ -94,7 +176,7 @@ export function Header() {
           <button
             type="button"
             onClick={toggleTheme}
-            className="p-2 border border-[var(--border-primary)] bg-[var(--bg-subtle)] text-[var(--text-primary)] hover:border-[#E63946] transition-colors cursor-pointer flex items-center justify-center"
+            className="p-2 border border-[var(--border-primary)] bg-[var(--bg-subtle)] text-[var(--text-primary)] hover:border-[#E63946] transition-colors cursor-pointer flex items-center justify-center rounded-sm"
             aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
             title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
           >

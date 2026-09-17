@@ -17,7 +17,9 @@ const SECTIONS: SectionItem[] = [
 ];
 
 export function TableOfContents() {
-  const [activeSection, setActiveSection] = useState<string>("");
+  const [activeSection, setActiveSection] = useState<string>("about");
+  const [hoveredSection, setHoveredSection] = useState<string | null>(null);
+
   const { scrollYProgress } = useScroll();
   const scaleY = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -29,8 +31,7 @@ export function TableOfContents() {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight * 0.35;
 
-      // Find the active section based on current scroll position
-      let current = "";
+      let current = "about";
       for (const section of SECTIONS) {
         const el = document.getElementById(section.id);
         if (el) {
@@ -43,12 +44,11 @@ export function TableOfContents() {
         }
       }
 
-      // If scrolled near top
-      if (window.scrollY < 300) {
-        current = "";
+      if (window.scrollY < 200) {
+        current = "about";
       } else if (
         window.innerHeight + window.scrollY >=
-        document.documentElement.scrollHeight - 100
+        document.documentElement.scrollHeight - 120
       ) {
         current = "contact";
       }
@@ -69,15 +69,16 @@ export function TableOfContents() {
     }
   };
 
+  const currentSelection = hoveredSection || activeSection;
+
   return (
     <aside
       aria-label="Table of contents"
-      className="hidden xl:flex fixed left-6 2xl:left-10 top-1/2 -translate-y-1/2 z-40 flex-col items-start select-none"
+      className="hidden xl:flex fixed left-5 2xl:left-8 top-1/2 -translate-y-1/2 z-40 select-none pointer-events-none"
     >
-      {/* Bauhaus Structural Rail */}
-      <div className="relative flex items-stretch gap-3">
-        {/* Progress Track Line */}
-        <div className="relative w-1 bg-[var(--border-subtle)] rounded-full overflow-hidden flex flex-col justify-start">
+      <div className="relative flex items-stretch gap-3 pointer-events-auto">
+        {/* Continuous Progress Track Line */}
+        <div className="relative w-1 my-1 bg-[var(--border-subtle)] rounded-full overflow-hidden flex flex-col justify-start">
           {/* Animated Progress Fill */}
           <motion.div
             style={{ scaleY, originY: 0 }}
@@ -85,48 +86,90 @@ export function TableOfContents() {
           />
         </div>
 
-        {/* Section Markers */}
-        <nav className="flex flex-col gap-4 py-2" aria-label="Page Sections">
+        {/* Section Markers with Individual Liquid Glass Pill Bubbles */}
+        <nav
+          className="relative flex flex-col items-start gap-2 py-1"
+          aria-label="Page Sections"
+          onMouseLeave={() => setHoveredSection(null)}
+        >
           {SECTIONS.map((sec) => {
-            const isActive = activeSection === sec.id;
+            const isSelected = currentSelection === sec.id;
 
             return (
               <button
                 key={sec.id}
                 type="button"
                 onClick={() => scrollToSection(sec.id)}
-                className="group flex items-center gap-2.5 text-left cursor-pointer focus:outline-none transition-all duration-200"
-                aria-current={isActive ? "location" : undefined}
+                onMouseEnter={() => setHoveredSection(sec.id)}
+                className="relative group flex items-center gap-2 pl-3 pr-5 py-2 rounded-full text-left cursor-pointer focus:outline-none transition-all duration-200 w-fit"
+                aria-current={isSelected ? "location" : undefined}
               >
-                {/* Square Bauhaus Indicator */}
-                <div
-                  className={`w-2.5 h-2.5 transition-all duration-200 ${
-                    isActive
-                      ? "bg-[#E63946] scale-125 shadow-[0_0_10px_rgba(230,57,70,0.5)]"
-                      : "bg-[var(--border-primary)] group-hover:bg-[#1D3557] group-hover:scale-110"
+                {/* Individual Pill Bubble - wraps exactly around this button */}
+                {isSelected && (
+                  <motion.div
+                    layoutId="liquid-glass-toc-lens"
+                    className="absolute inset-0 rounded-full pointer-events-none -z-10 overflow-hidden"
+                    transition={{
+                      type: "spring",
+                      stiffness: 450,
+                      damping: 32,
+                      mass: 0.5,
+                    }}
+                  >
+                    {/* Glass Pill Surface: Crisp white in light mode, smoky in dark mode */}
+                    <div className="liquid-lens-surface absolute inset-0 rounded-full" />
+
+                    {/* Specular Curved Highlight (Top Arch) */}
+                    <div className="liquid-lens-highlight absolute top-0 left-2 right-2 h-1.5 rounded-full blur-[0.5px]" />
+
+                    {/* Subtle chromatic refraction */}
+                    <div className="liquid-lens-tint absolute inset-0 rounded-full" />
+                  </motion.div>
+                )}
+
+                {/* Bauhaus Geometric Indicator */}
+                <motion.div
+                  animate={{
+                    scale: isSelected ? 1.25 : 1,
+                  }}
+                  transition={{ duration: 0.2 }}
+                  className={`w-2 h-2 shrink-0 rounded-full transition-all duration-200 ${
+                    isSelected
+                      ? "bg-[#E63946] shadow-[0_0_8px_rgba(230,57,70,0.7)]"
+                      : "bg-[var(--border-primary)] group-hover:bg-[#1D3557]"
                   }`}
                 />
 
                 {/* Section Number & Label */}
-                <div className="flex items-center gap-1.5 font-mono text-[11px] tracking-widest uppercase transition-colors duration-200">
-                  <span
-                    className={`transition-colors ${
-                      isActive
+                <div className="flex items-center gap-1.5 font-mono text-[11px] tracking-wider uppercase whitespace-nowrap">
+                  <motion.span
+                    animate={{
+                      scale: isSelected ? 1.2 : 1,
+                      originX: 0,
+                    }}
+                    transition={{ duration: 0.2 }}
+                    className={`transition-colors shrink-0 ${
+                      isSelected
                         ? "text-[#E63946] font-bold"
                         : "text-[var(--text-muted)] group-hover:text-[var(--text-primary)]"
                     }`}
                   >
                     [{sec.num}]
-                  </span>
-                  <span
+                  </motion.span>
+                  <motion.span
+                    animate={{
+                      scale: isSelected ? 1.15 : 1,
+                      originX: 0,
+                    }}
+                    transition={{ duration: 0.2 }}
                     className={`transition-all duration-200 ${
-                      isActive
-                        ? "text-[var(--text-primary)] font-bold translate-x-0.5"
-                        : "text-[var(--text-muted)] group-hover:text-[var(--text-secondary)] opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0"
+                      isSelected
+                        ? "text-[var(--text-primary)] font-bold max-w-[260px] opacity-100"
+                        : "text-[var(--text-secondary)] max-w-0 opacity-0 group-hover:max-w-[260px] group-hover:opacity-100 overflow-hidden"
                     }`}
                   >
                     {sec.label}
-                  </span>
+                  </motion.span>
                 </div>
               </button>
             );
